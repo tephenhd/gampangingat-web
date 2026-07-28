@@ -10,6 +10,7 @@
   --tx:#151A1F; --tx-2:#4F5A5E; --tx-3:#5E6B6F;
   --brand:var(--admiral); --brand-tx:#FFFFFF;
   --shadow:0 1px 2px rgba(14,18,22,.05),0 8px 24px -12px rgba(14,18,22,.18);
+  --sw-ring:rgba(20,26,31,.13);
   --measure:65ch; --wrap:1180px;
   --f-disp:"NSN","Nimbus Sans Narrow","Arial Narrow",Helvetica,"PingFang SC","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans CJK SC","Noto Sans SC","Microsoft YaHei","Yu Gothic UI","Malgun Gothic",sans-serif;
   --f-body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans CJK SC","Noto Sans SC","Microsoft YaHei","Yu Gothic UI","Malgun Gothic",sans-serif;
@@ -21,6 +22,7 @@
     --tx:#E6EAE6; --tx-2:#A4B0B4; --tx-3:#7C888D;
     --brand:#6FA0EC; --brand-tx:#0E1216; --admiral-2:#6FA0EC;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+    --sw-ring:rgba(255,255,255,.16);
   }
 }
 :root[data-theme="dark"]{
@@ -28,12 +30,14 @@
   --tx:#E6EAE6; --tx-2:#A4B0B4; --tx-3:#7C888D;
   --brand:#6FA0EC; --brand-tx:#0E1216; --admiral-2:#6FA0EC;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+  --sw-ring:rgba(255,255,255,.16);
 }
 :root[data-theme="light"]{
   --paper:#EFF1EE; --card:#FFFFFF; --line:#D2D7D2;
   --tx:#151A1F; --tx-2:#4F5A5E; --tx-3:#5E6B6F;
   --brand:#16356E; --brand-tx:#FFFFFF; --admiral-2:#1E4A96;
   --shadow:0 1px 2px rgba(14,18,22,.05),0 8px 24px -12px rgba(14,18,22,.18);
+  --sw-ring:rgba(20,26,31,.13);
 }
 
 *{box-sizing:border-box}
@@ -236,7 +240,7 @@ h1 em{font-style:normal;color:var(--brand);display:block}
 .sw{border:0;padding:0;background:none;text-align:left;cursor:pointer;display:flex;
   flex-direction:column;gap:7px;font-family:inherit}
 .sw-c{aspect-ratio:5/4;border-radius:3px;position:relative;transition:transform .14s;overflow:hidden;
-  box-shadow:inset 0 0 0 1px rgba(20,26,31,.13),var(--shadow)}
+  box-shadow:inset 0 0 0 1px var(--sw-ring),var(--shadow)}
 /* finish rendering — a paint card shows texture, not just hue */
 .sw-c.fin::before{content:"";position:absolute;inset:0;pointer-events:none}
 .fin-hammer::before{
