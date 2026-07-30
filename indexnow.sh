@@ -42,7 +42,10 @@ code=$(curl -sS -o /tmp/indexnow-resp.txt -w '%{http_code}' \
 
 echo "HTTP $code"
 case "$code" in
-  200|202) echo "Accepted. Bing/Yandex/Seznam/Naver will recrawl." ;;
+  200) echo "OK - key VERIFIED and URLs submitted. This is the success signal." ;;
+  202) echo "Accepted, but key validation is still PENDING - this is NOT yet proof of success."
+       echo "(A deliberately invalid key also returns 202, verified 2026-07-30.)"
+       echo "Re-run in a few minutes; a 200 means the key was actually verified." ;;
   400) echo "Bad request - check the JSON payload." >&2; cat /tmp/indexnow-resp.txt >&2 ;;
   403) echo "Key not valid for this host - is ${KEY_LOCATION} live?" >&2 ;;
   422) echo "URLs do not match the host, or key mismatch." >&2 ;;
