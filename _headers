@@ -1,0 +1,13 @@
+# artifact.html is an internal preview fragment, not a public page.
+# It shares the homepage <title> and has no canonical, so left alone it reads
+# as duplicate content. The noindex meta inside the file is the primary guard;
+# this header is the backup in case the meta is missed.
+/artifact
+  X-Robots-Tag: noindex
+
+/artifact.html
+  X-Robots-Tag: noindex
+
+# The colour data and fonts are inlined, so the page is one big immutable blob.
+/og.png
+  Cache-Control: public, max-age=604800
