@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img" aria-label="Ilustrasi persiapan dan finishing: satu pekerja mendempul panel pintu mobil, satu lagi memoles sisi yang sudah jadi mengkilap">
+<defs>
+  <pattern id="sm-dot" width="13" height="13" patternUnits="userSpaceOnUse">
+    <circle cx="6.5" cy="6.5" r="1.5" fill="#B8862E"/>
+  </pattern>
+  <filter id="sm-grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+</defs>
+
+<rect width="900" height="1200" fill="#E6E3DA"/>
+<rect x="0" y="0" width="900" height="940" fill="#DAD6CA"/>
+<rect x="0" y="0" width="252" height="940" fill="url(#sm-dot)" opacity=".22"/>
+<g style="mix-blend-mode:multiply">
+  <polygon points="0,0 300,0 0,400" fill="#B8862E" opacity=".14"/>
+  <polygon points="900,0 900,320 640,0" fill="#1E3358" opacity=".12"/>
+</g>
+
+<!-- roof beam + lamp -->
+<rect x="0" y="104" width="900" height="10" fill="#B9B3A4"/>
+<rect x="446" y="114" width="8" height="80" fill="#3A3F45"/>
+<path d="M408,194 L492,194 L474,226 L426,226 Z" fill="#3A3F45"/>
+<ellipse cx="450" cy="226" rx="23" ry="7" fill="#EFE3B8"/>
+<g style="mix-blend-mode:multiply"><polygon points="418,228 482,228 600,940 300,940" fill="#D9A521" opacity=".12"/></g>
+
+<!-- floor -->
+<rect x="0" y="940" width="900" height="124" fill="#C3BCAC"/>
+<rect x="0" y="940" width="900" height="6" fill="#A9A08D"/>
+
+<!-- ================= PANEL STAND ================= -->
+<g>
+  <ellipse cx="490" cy="1000" rx="230" ry="15" fill="#A9A08D" opacity=".55"/>
+  <rect x="298" y="820" width="386" height="16" fill="#6B6357"/>
+  <polygon points="338,836 358,836 318,1000 296,1000" fill="#5C554A"/>
+  <polygon points="624,836 644,836 684,1000 662,1000" fill="#5C554A"/>
+  <polygon points="330,928 652,938 652,952 330,942" fill="#6B6357"/>
+</g>
+
+<!-- ================= CAR DOOR PANEL ================= -->
+<g>
+  <rect x="300" y="396" width="382" height="424" rx="10" fill="#16273F"/>
+  <rect x="306" y="402" width="370" height="412" rx="8" fill="#1E3358"/>
+  <!-- window aperture, glass removed for refinishing -->
+  <rect x="332" y="414" width="318" height="130" rx="7" fill="#16273F"/>
+  <rect x="340" y="422" width="302" height="114" rx="4" fill="#DAD6CA"/>
+  <!-- beltline -->
+  <rect x="306" y="550" width="370" height="16" fill="#16273F"/>
+  <!-- polished side : reflection, kept off the filler half -->
+  <polygon points="566,572 598,572 518,810 486,810" fill="#6FA0EC" opacity=".18"/>
+  <polygon points="618,572 636,572 560,810 542,810" fill="#FFFFFF" opacity=".22"/>
+  <!-- body crease -->
+  <path d="M308,700 L674,690" fill="none" stroke="#16273F" stroke-width="5"/>
+  <!-- handle -->
+  <rect x="556" y="598" width="80" height="24" rx="12" fill="#8A9199"/>
+  <rect x="563" y="603" width="66" height="10" rx="5" fill="#C9CDD2"/>
+  <!-- filler patch, still to be sanded -->
+  <path d="M334,706 C352,686 398,678 436,688 C470,697 480,724 470,752 C458,786 414,800 374,792 C338,785 318,744 334,706 Z" fill="#B9B3A4"/>
+  <path d="M346,714 C366,700 402,695 432,702" fill="none" stroke="#CFC9BB" stroke-width="6" stroke-linecap="round"/>
+  <path d="M342,740 C364,728 412,724 452,731" fill="none" stroke="#CFC9BB" stroke-width="5" stroke-linecap="round"/>
+  <path d="M352,766 C372,757 414,754 450,760" fill="none" stroke="#CFC9BB" stroke-width="4" stroke-linecap="round"/>
+  <!-- filler just laid by the spatula -->
+  <path d="M330,690 C352,672 396,668 428,676 L423,694 C396,686 354,690 336,704 Z" fill="#CFC9BB"/>
+</g>
+
+<!-- floor tins between the stand legs -->
+<g>
+  <rect x="376" y="962" width="92" height="60" fill="#8E887A"/>
+  <rect x="370" y="951" width="104" height="12" fill="#6B6357"/>
+  <rect x="396" y="978" width="52" height="28" fill="#E6E3DA" opacity=".8"/>
+  <rect x="486" y="958" width="66" height="64" fill="#B8862E"/>
+  <rect x="481" y="947" width="76" height="12" fill="#96691F"/>
+  <rect x="570" y="972" width="40" height="50" rx="3" fill="#A8552A"/>
+  <rect x="575" y="958" width="30" height="15" fill="#C9CDD2"/>
+</g>
+<!-- sanding block + dust -->
+<g>
+  <rect x="206" y="994" width="58" height="22" rx="4" fill="#6B6357"/>
+  <rect x="206" y="994" width="58" height="8" rx="4" fill="#8A8378"/>
+</g>
+
+<!-- ============ WORKER A : SPREADING THE FILLER ============ -->
+<g>
+  <path d="M182,840 L190,926 L196,998" fill="none" stroke="#0F2450" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M148,838 L140,924 L132,998" fill="none" stroke="#16356E" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M108,988 L146,988 L148,1012 L104,1012 Z" fill="#14181D"/>
+  <path d="M172,990 L210,990 L212,1014 L168,1014 Z" fill="#14181D"/>
+  <polygon points="114,710 198,710 206,846 106,846" fill="#16356E"/>
+  <polygon points="130,712 182,712 188,846 124,846" fill="#1E4A96" opacity=".5"/>
+  <rect x="108" y="818" width="96" height="13" fill="#0F2450"/>
+  <rect x="118" y="746" width="24" height="21" fill="#0F2450" opacity=".6"/>
+  <rect x="110" y="704" width="96" height="14" rx="7" fill="#1E4A96"/>
+  <rect x="144" y="686" width="24" height="22" fill="#A8703F"/>
+  <circle cx="156" cy="666" r="30" fill="#C98A5E"/>
+  <circle cx="172" cy="672" r="6" fill="#A8703F"/>
+  <path d="M126,654 C128,634 146,626 164,628 C180,630 187,642 187,656 Z" fill="#B8862E"/>
+  <path d="M185,650 L213,653 L213,662 L185,662 Z" fill="#96691F"/>
+  <path d="M152,664 C170,662 182,668 182,677 C182,687 170,693 152,690 Z" fill="#DCD8CD"/>
+  <path d="M120,730 L96,796 L108,850" fill="none" stroke="#0F2450" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M196,726 L258,700 L308,682" fill="none" stroke="#1E4A96" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="310" cy="681" r="13" fill="#E0DACB"/>
+  <!-- kape / spatula -->
+  <rect x="294" y="667" width="26" height="17" rx="5" fill="#6B6357" transform="rotate(-16 307 675)"/>
+  <polygon points="315,663 377,640 383,663 321,686" fill="#C9CDD2"/>
+  <polygon points="377,640 383,663 379,664 373,641" fill="#8A9199"/>
+</g>
+
+<!-- ============ WORKER B : POLISHING ============ -->
+<g>
+  <path d="M826,840 L834,926 L840,998" fill="none" stroke="#0F2450" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M792,838 L784,924 L776,998" fill="none" stroke="#16356E" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M752,988 L790,988 L792,1012 L748,1012 Z" fill="#14181D"/>
+  <path d="M816,990 L854,990 L856,1014 L812,1014 Z" fill="#14181D"/>
+  <polygon points="768,710 852,710 860,846 760,846" fill="#16356E"/>
+  <polygon points="784,712 836,712 842,846 778,846" fill="#1E4A96" opacity=".5"/>
+  <rect x="762" y="818" width="96" height="13" fill="#0F2450"/>
+  <rect x="824" y="746" width="24" height="21" fill="#0F2450" opacity=".6"/>
+  <rect x="764" y="704" width="96" height="14" rx="7" fill="#1E4A96"/>
+  <rect x="798" y="686" width="24" height="22" fill="#A8703F"/>
+  <circle cx="810" cy="666" r="30" fill="#C98A5E"/>
+  <circle cx="826" cy="672" r="6" fill="#A8703F"/>
+  <path d="M779,654 C781,634 799,626 817,628 C833,630 840,642 840,656 Z" fill="#B8862E"/>
+  <path d="M781,650 L753,653 L753,662 L781,662 Z" fill="#96691F"/>
+  <path d="M806,664 C788,662 776,668 776,677 C776,687 788,693 806,690 Z" fill="#DCD8CD"/>
+  <!-- rotary polisher, held at chest height -->
+  <circle cx="652" cy="752" r="46" fill="#C9CDD2"/>
+  <circle cx="652" cy="752" r="38" fill="#EFEDE4"/>
+  <circle cx="652" cy="752" r="17" fill="#9AA0A6"/>
+  <rect x="682" y="736" width="22" height="34" rx="5" fill="#9AA0A6"/>
+  <rect x="690" y="722" width="76" height="56" rx="18" fill="#2C3138"/>
+  <rect x="702" y="734" width="40" height="12" rx="6" fill="#454D55"/>
+  <rect x="686" y="782" width="58" height="17" rx="8" fill="#3A3F45"/>
+  <rect x="758" y="728" width="30" height="44" rx="11" fill="#3A3F45"/>
+  <!-- back hand on the rear grip -->
+  <path d="M838,730 L818,752 L780,750" fill="none" stroke="#0F2450" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="778" cy="750" r="12" fill="#CFC8B8"/>
+  <!-- front hand on the side handle -->
+  <path d="M772,734 L742,782 L714,792" fill="none" stroke="#1E4A96" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="712" cy="792" r="13" fill="#E0DACB"/>
+</g>
+
+<!-- polish glints + swirl -->
+<g fill="#FFFFFF">
+  <path d="M600,596 L607,615 L626,622 L607,629 L600,648 L593,629 L574,622 L593,615 Z" opacity=".92"/>
+  <path d="M544,680 L548,692 L560,696 L548,700 L544,712 L540,700 L528,696 L540,692 Z" opacity=".8"/>
+  <path d="M628,540 L631,550 L641,553 L631,556 L628,566 L625,556 L615,553 L625,550 Z" opacity=".7"/>
+</g>
+<g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".45">
+  <path d="M606,708 C620,694 644,690 660,698"/>
+  <path d="M602,800 C616,814 642,818 660,810"/>
+</g>
+<!-- sanding dust -->
+<g fill="#8E887A" opacity=".45">
+  <circle cx="352" cy="812" r="3.4"/><circle cx="392" cy="828" r="2.6"/><circle cx="322" cy="836" r="3"/>
+  <circle cx="424" cy="812" r="2.2"/><circle cx="366" cy="856" r="2.4"/>
+</g>
+
+<g style="mix-blend-mode:multiply" opacity=".2"><rect width="900" height="1200" filter="url(#sm-grain)"/></g>
+
+<!-- ================= TITLE BAND ================= -->
+<rect x="0" y="1064" width="900" height="136" fill="#14181D"/>
+<g font-family="NSN, 'Nimbus Sans Narrow', 'Liberation Sans Narrow', 'Arial Narrow', Helvetica, sans-serif">
+  <text x="52" y="1104" fill="#D6A33F" font-size="15" letter-spacing="4.2" font-weight="700">DEMPUL · KOMPON · POLES · ANTI KARAT</text>
+  <text x="49" y="1160" fill="#B8862E" font-size="58" font-weight="800" letter-spacing="1" opacity=".9">SUMADJAJA</text>
+  <text x="52" y="1158" fill="#E6E3DA" font-size="58" font-weight="800" letter-spacing="1">SUMADJAJA</text>
+</g>
+<g>
+  <rect x="700" y="1120" width="30" height="30" fill="#B9B3A4"/>
+  <rect x="736" y="1120" width="30" height="30" fill="#1E3358"/>
+  <rect x="772" y="1120" width="30" height="30" fill="#A8552A"/>
+  <rect x="808" y="1120" width="30" height="30" fill="#B8862E"/>
+</g>
+</svg>
