@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img" aria-label="Ilustrasi kerja kreatif: perajin menyemprot kursi kayu dengan cat semprot Tiloc warna fluo">
+<defs>
+  <pattern id="tl-dsm" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.5" fill="#FF5A1F"/></pattern>
+  <pattern id="tl-dlg" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="3" fill="#FF5A1F"/></pattern>
+  <filter id="tl-grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+</defs>
+
+<rect width="900" height="1200" fill="#E6E3DA"/>
+<rect x="0" y="0" width="900" height="940" fill="#DDD9CD"/>
+<g style="mix-blend-mode:multiply">
+  <polygon points="900,0 900,380 620,0" fill="#FF5A1F" opacity=".12"/>
+  <polygon points="0,0 260,0 0,340" fill="#7A4B9E" opacity=".12"/>
+</g>
+
+<!-- window + daylight -->
+<g>
+  <rect x="566" y="132" width="284" height="248" fill="#8E887A"/>
+  <rect x="574" y="140" width="268" height="232" fill="#EFE9CE"/>
+  <g fill="#8E887A"><rect x="704" y="140" width="9" height="232"/><rect x="574" y="248" width="268" height="9"/></g>
+</g>
+<g style="mix-blend-mode:multiply">
+  <polygon points="566,388 850,388 660,940 300,940" fill="#D9A521" opacity=".14"/>
+</g>
+
+<!-- test-swatch board on the wall -->
+<g>
+  <rect x="120" y="286" width="196" height="150" fill="#B9B3A4"/>
+  <rect x="114" y="280" width="196" height="150" fill="#E6E3DA"/>
+  <g>
+    <rect x="126" y="292" width="40" height="126" fill="#FF5A1F"/>
+    <rect x="172" y="292" width="40" height="126" fill="#F0243C"/>
+    <rect x="218" y="292" width="40" height="126" fill="#7A4B9E"/>
+    <rect x="264" y="292" width="34" height="126" fill="#F2B807"/>
+  </g>
+</g>
+
+<!-- wall shelf of aerosol cans -->
+<g>
+  <rect x="40" y="592" width="214" height="12" fill="#8A8378"/>
+  <polygon points="62,604 78,604 62,628" fill="#6B6357"/>
+  <polygon points="232,604 216,604 232,628" fill="#6B6357"/>
+  <rect x="58" y="522" width="30" height="70" rx="3" fill="#FF5A1F"/><rect x="63" y="508" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="96" y="522" width="30" height="70" rx="3" fill="#F0243C"/><rect x="101" y="508" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="134" y="522" width="30" height="70" rx="3" fill="#7A4B9E"/><rect x="139" y="508" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="172" y="522" width="30" height="70" rx="3" fill="#F2B807"/><rect x="177" y="508" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="210" y="522" width="30" height="70" rx="3" fill="#0F9E56"/><rect x="215" y="508" width="20" height="15" fill="#C9CDD2"/>
+</g>
+
+<!-- floor -->
+<rect x="0" y="940" width="900" height="124" fill="#C3BCAC"/>
+<rect x="0" y="940" width="900" height="6" fill="#A9A08D"/>
+
+<!-- ============ BENCH ============ -->
+<g>
+  <rect x="430" y="786" width="452" height="22" fill="#8A8378"/>
+  <rect x="430" y="786" width="452" height="7" fill="#A59E92"/>
+  <rect x="464" y="808" width="20" height="140" fill="#6B6357"/>
+  <rect x="828" y="808" width="20" height="140" fill="#6B6357"/>
+  <rect x="470" y="880" width="374" height="12" fill="#6B6357"/>
+  <!-- newspaper / masking sheet -->
+  <polygon points="486,762 826,762 848,788 466,788" fill="#EFEDE4"/>
+  <g stroke="#C7C3B5" stroke-width="3">
+    <line x1="504" y1="772" x2="700" y2="772"/><line x1="504" y1="780" x2="660" y2="780"/>
+  </g>
+</g>
+
+<!-- ============ THE STOOL BEING SPRAYED ============ -->
+<g>
+  <g stroke="#E8531A" stroke-width="15" stroke-linecap="round">
+    <line x1="548" y1="700" x2="520" y2="772"/>
+    <line x1="632" y1="700" x2="660" y2="772"/>
+    <line x1="590" y1="704" x2="592" y2="770"/>
+  </g>
+  <path d="M532,734 L650,734" stroke="#E8531A" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="590" cy="700" rx="86" ry="23" fill="#FF5A1F"/>
+  <ellipse cx="590" cy="693" rx="86" ry="23" fill="#FF7A45"/>
+  <ellipse cx="590" cy="693" rx="50" ry="12" fill="#FF9264" opacity=".7"/>
+</g>
+
+<!-- ============ MIST ============ -->
+<g style="mix-blend-mode:multiply">
+  <polygon points="452,682 512,596 512,772" fill="url(#tl-dsm)" opacity=".85"/>
+  <polygon points="456,684 506,630 506,738" fill="url(#tl-dlg)" opacity=".7"/>
+</g>
+<g fill="#FF5A1F" opacity=".45">
+  <circle cx="528" cy="652" r="3"/><circle cx="552" cy="634" r="2.4"/><circle cx="524" cy="740" r="2.6"/>
+  <circle cx="562" cy="752" r="2.2"/><circle cx="546" cy="616" r="2"/><circle cx="500" cy="600" r="2.2"/>
+</g>
+
+<!-- ============ THE MAKER ============ -->
+<g>
+  <!-- far leg -->
+  <path d="M284,838 L292,924 L298,1000" fill="none" stroke="#0F2450" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- near leg -->
+  <path d="M248,836 L238,924 L230,1000" fill="none" stroke="#16356E" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M206,990 L242,990 L244,1014 L202,1014 Z" fill="#14181D"/>
+  <path d="M276,992 L312,992 L314,1016 L272,1016 Z" fill="#14181D"/>
+  <!-- torso -->
+  <polygon points="214,708 300,708 308,846 206,846" fill="#16356E"/>
+  <polygon points="230,710 282,710 288,846 224,846" fill="#1E4A96" opacity=".5"/>
+  <rect x="208" y="816" width="98" height="13" fill="#0F2450"/>
+  <!-- apron -->
+  <path d="M228,730 L286,730 L294,846 L220,846 Z" fill="#7A4B9E" opacity=".55"/>
+  <rect x="210" y="702" width="98" height="14" rx="7" fill="#1E4A96"/>
+  <rect x="244" y="684" width="24" height="22" fill="#A8703F"/>
+  <!-- head, facing right -->
+  <circle cx="256" cy="668" r="30" fill="#C98A5E"/>
+  <circle cx="272" cy="674" r="6" fill="#A8703F"/>
+  <!-- hair bun at the back -->
+  <circle cx="222" cy="656" r="18" fill="#2A2118"/>
+  <path d="M226,646 C228,624 246,616 264,618 C280,620 288,632 288,646 L288,652 C270,644 242,642 226,652 Z" fill="#2A2118"/>
+  <!-- bandana -->
+  <path d="M226,648 C228,628 246,620 264,622 C280,624 288,634 288,648 Z" fill="#F0243C"/>
+  <path d="M226,646 L204,652 L208,664 L228,656 Z" fill="#C4192E"/>
+  <!-- dust mask -->
+  <path d="M252,666 C270,664 282,670 282,679 C282,689 270,695 252,692 Z" fill="#DCD8CD"/>
+  <!-- far arm steadying the stool leg -->
+  <path d="M300,732 L320,800 L312,858" fill="none" stroke="#0F2450" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="311" cy="862" r="12" fill="#C98A5E"/>
+  <path d="M296,870 L330,868 L338,906 L290,902 Z" fill="#EFEDE4"/>
+  <!-- near arm, spraying -->
+  <path d="M292,726 L356,700 L414,690" fill="none" stroke="#1E4A96" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="414" cy="690" r="13" fill="#E0DACB"/>
+  <!-- aerosol can -->
+  <rect x="402" y="644" width="34" height="70" rx="3" fill="#FF5A1F"/>
+  <rect x="402" y="666" width="34" height="16" fill="#E6E3DA"/>
+  <rect x="402" y="644" width="34" height="8" rx="3" fill="#E8531A"/>
+  <rect x="408" y="626" width="22" height="20" fill="#C9CDD2"/>
+  <rect x="436" y="630" width="16" height="9" rx="3" fill="#9AA0A6"/>
+</g>
+
+<!-- cans on the bench + floor -->
+<g>
+  <rect x="756" y="712" width="30" height="66" rx="3" fill="#F0243C"/><rect x="761" y="698" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="792" y="712" width="30" height="66" rx="3" fill="#7A4B9E"/><rect x="797" y="698" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="828" y="712" width="30" height="66" rx="3" fill="#F2B807"/><rect x="833" y="698" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="112" y="954" width="32" height="70" rx="3" fill="#FF5A1F"/><rect x="117" y="939" width="22" height="16" fill="#C9CDD2"/>
+  <rect x="152" y="972" width="32" height="52" rx="3" fill="#7A4B9E"/><rect x="157" y="957" width="22" height="16" fill="#C9CDD2"/>
+</g>
+<g fill="#FF5A1F" opacity=".35">
+  <circle cx="470" cy="972" r="5"/><circle cx="512" cy="992" r="3.4"/><circle cx="440" cy="1000" r="3"/><circle cx="556" cy="968" r="2.6"/>
+</g>
+
+<g style="mix-blend-mode:multiply" opacity=".2"><rect width="900" height="1200" filter="url(#tl-grain)"/></g>
+
+<!-- ============ TITLE BAND ============ -->
+<rect x="0" y="1064" width="900" height="136" fill="#14181D"/>
+<g font-family="NSN, 'Nimbus Sans Narrow', 'Liberation Sans Narrow', 'Arial Narrow', Helvetica, sans-serif">
+  <text x="52" y="1104" fill="#FF7A45" font-size="15" letter-spacing="4.6" font-weight="700">CAT SEMPROT · KAYU, BESI &amp; KREATIF</text>
+  <text x="49" y="1160" fill="#FF5A1F" font-size="60" font-weight="800" letter-spacing="1" opacity=".9">TILOC</text>
+  <text x="52" y="1158" fill="#E6E3DA" font-size="60" font-weight="800" letter-spacing="1">TILOC</text>
+</g>
+<g>
+  <rect x="700" y="1120" width="30" height="30" fill="#FF5A1F"/>
+  <rect x="736" y="1120" width="30" height="30" fill="#F0243C"/>
+  <rect x="772" y="1120" width="30" height="30" fill="#7A4B9E"/>
+  <rect x="808" y="1120" width="30" height="30" fill="#F2B807"/>
+</g>
+</svg>

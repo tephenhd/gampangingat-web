@@ -11,3 +11,7 @@
 # The colour data and fonts are inlined, so the page is one big immutable blob.
 /og.png
   Cache-Control: public, max-age=604800
+
+# Illustrated brand posters — content-stable, lazy-loaded, safe to cache hard.
+/poster-*.svg
+  Cache-Control: public, max-age=604800

@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img" aria-label="Ilustrasi bengkel malam: anak muda mengecat helm dengan cat semprot RPM">
+<defs>
+  <pattern id="rp-dsm" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.5" fill="#F2B807"/></pattern>
+  <pattern id="rp-dlg" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="3" fill="#F2B807"/></pattern>
+  <clipPath id="rp-hel"><circle cx="676" cy="752" r="78"/></clipPath>
+  <filter id="rp-grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+</defs>
+
+<rect width="900" height="1200" fill="#14181D"/>
+<rect x="0" y="0" width="900" height="940" fill="#1A2027"/>
+<rect x="0" y="940" width="900" height="124" fill="#252D35"/>
+<rect x="0" y="940" width="900" height="5" fill="#38424C"/>
+
+<!-- hanging lamp + light cone -->
+<rect x="470" y="0" width="8" height="150" fill="#38424C"/>
+<path d="M418,150 L530,150 L506,196 L442,196 Z" fill="#38424C"/>
+<ellipse cx="474" cy="196" rx="32" ry="9" fill="#F2B807"/>
+<polygon points="440,200 508,200 720,940 220,940" fill="#F2B807" opacity=".08"/>
+<polygon points="452,200 496,200 600,940 340,940" fill="#F2B807" opacity=".06"/>
+
+<!-- ============ RACK OF AEROSOL CANS ============ -->
+<g>
+  <rect x="40" y="196" width="12" height="410" fill="#38424C"/>
+  <rect x="324" y="196" width="12" height="410" fill="#38424C"/>
+  <g fill="#46525E">
+    <rect x="40" y="300" width="296" height="11"/>
+    <rect x="40" y="420" width="296" height="11"/>
+    <rect x="40" y="540" width="296" height="11"/>
+  </g>
+  <g>
+    <rect x="60" y="228" width="26" height="72" fill="#F0243C"/><rect x="63" y="214" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="93" y="228" width="26" height="72" fill="#F2B807"/><rect x="96" y="214" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="126" y="228" width="26" height="72" fill="#0F9E56"/><rect x="129" y="214" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="159" y="228" width="26" height="72" fill="#1E4A96"/><rect x="162" y="214" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="192" y="228" width="26" height="72" fill="#7A4B9E"/><rect x="195" y="214" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="225" y="228" width="26" height="72" fill="#E6E3DA"/><rect x="228" y="214" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="258" y="228" width="26" height="72" fill="#0E1216"/><rect x="261" y="214" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="291" y="228" width="26" height="72" fill="#9AA0A6"/><rect x="294" y="214" width="20" height="15" fill="#C9CDD2"/>
+  </g>
+  <g>
+    <rect x="60" y="348" width="26" height="72" fill="#0F9E56"/><rect x="63" y="334" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="93" y="348" width="26" height="72" fill="#0E1216"/><rect x="96" y="334" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="126" y="348" width="26" height="72" fill="#F0243C"/><rect x="129" y="334" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="159" y="348" width="26" height="72" fill="#9AA0A6"/><rect x="162" y="334" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="192" y="348" width="26" height="72" fill="#F2B807"/><rect x="195" y="334" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="225" y="348" width="26" height="72" fill="#7A4B9E"/><rect x="228" y="334" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="258" y="348" width="26" height="72" fill="#1E4A96"/><rect x="261" y="334" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="291" y="348" width="26" height="72" fill="#E6E3DA"/><rect x="294" y="334" width="20" height="15" fill="#C9CDD2"/>
+  </g>
+  <g>
+    <rect x="60" y="468" width="26" height="72" fill="#1E4A96"/><rect x="63" y="454" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="93" y="468" width="26" height="72" fill="#F0243C"/><rect x="96" y="454" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="126" y="468" width="26" height="72" fill="#E6E3DA"/><rect x="129" y="454" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="159" y="468" width="26" height="72" fill="#0F9E56"/><rect x="162" y="454" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="192" y="468" width="26" height="72" fill="#0E1216"/><rect x="195" y="454" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="225" y="468" width="26" height="72" fill="#F2B807"/><rect x="228" y="454" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="258" y="468" width="26" height="72" fill="#9AA0A6"/><rect x="261" y="454" width="20" height="15" fill="#C9CDD2"/>
+    <rect x="291" y="468" width="26" height="72" fill="#7A4B9E"/><rect x="294" y="454" width="20" height="15" fill="#C9CDD2"/>
+  </g>
+</g>
+
+<!-- ============ CRATE + HELMET ============ -->
+<g>
+  <rect x="560" y="830" width="250" height="110" fill="#5C554A"/>
+  <rect x="560" y="830" width="250" height="12" fill="#6E6658"/>
+  <g fill="#4A443A"><rect x="580" y="852" width="10" height="76"/><rect x="676" y="852" width="10" height="76"/><rect x="772" y="852" width="10" height="76"/></g>
+  <ellipse cx="676" cy="828" rx="78" ry="14" fill="#0A6E3A"/>
+  <circle cx="676" cy="752" r="78" fill="#0F9E56"/>
+  <g clip-path="url(#rp-hel)">
+    <path d="M598,752 C598,706 632,674 676,674 C720,674 754,706 754,752 Z" fill="#13B96B"/>
+    <rect x="590" y="722" width="176" height="16" fill="#F2B807"/>
+    <rect x="590" y="742" width="176" height="7" fill="#E6E3DA"/>
+    <path d="M700,700 C740,710 760,738 760,770 C760,792 748,806 726,806 L686,796 Z" fill="#101418"/>
+    <path d="M706,712 C736,722 750,742 750,766 L700,758 Z" fill="#2A343D"/>
+  </g>
+  <path d="M614,806 C640,824 712,824 738,806" fill="none" stroke="#0A6E3A" stroke-width="7"/>
+</g>
+
+<!-- ============ MIST ============ -->
+<g style="mix-blend-mode:screen">
+  <polygon points="558,676 628,564 628,808" fill="url(#rp-dsm)" opacity=".95"/>
+  <polygon points="562,678 620,606 620,762" fill="url(#rp-dlg)" opacity=".8"/>
+</g>
+<g fill="#F2B807" opacity=".55">
+  <circle cx="640" cy="700" r="3.4"/><circle cx="662" cy="672" r="2.6"/><circle cx="634" cy="748" r="3"/>
+  <circle cx="670" cy="716" r="2.2"/><circle cx="648" cy="784" r="2.4"/><circle cx="676" cy="648" r="2"/>
+  <circle cx="614" cy="620" r="2.6"/><circle cx="606" cy="812" r="2.4"/><circle cx="690" cy="756" r="1.8"/>
+</g>
+<path d="M600,702 C616,682 640,674 664,678 C648,700 636,730 634,760 C616,748 602,726 600,702 Z" fill="#3ADB8E" opacity=".3"/>
+
+<!-- ============ KNEELING WORKER ============ -->
+<g>
+  <!-- back leg, shin on the floor -->
+  <path d="M340,804 L302,894 L236,926" fill="none" stroke="#0F2450" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- front leg, foot flat on the floor -->
+  <path d="M358,798 L436,844 L440,918" fill="none" stroke="#16356E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M414,908 L460,908 L462,936 L410,936 Z" fill="#0E1216"/>
+  <path d="M212,916 L262,916 L264,938 L208,938 Z" fill="#0E1216"/>
+  <!-- torso, leaning in -->
+  <polygon points="326,792 392,800 424,672 360,660" fill="#16356E"/>
+  <polygon points="346,790 384,795 410,674 376,668" fill="#1E4A96" opacity=".5"/>
+  <polygon points="330,762 396,770 392,790 328,782" fill="#0F2450"/>
+  <polygon points="356,656 424,668 420,690 352,678" fill="#1E4A96"/>
+  <!-- neck + head, facing right -->
+  <rect x="388" y="638" width="22" height="22" fill="#A8703F" transform="rotate(10 399 649)"/>
+  <circle cx="418" cy="620" r="28" fill="#C98A5E"/>
+  <circle cx="402" cy="626" r="5.5" fill="#A8703F"/>
+  <!-- beanie -->
+  <path d="M390,610 C392,590 408,582 424,584 C440,586 448,596 448,610 Z" fill="#F0243C"/>
+  <rect x="389" y="606" width="60" height="12" rx="6" fill="#C4192E"/>
+  <!-- dust mask -->
+  <path d="M420,618 C438,616 450,622 450,631 C450,641 438,647 420,644 Z" fill="#DCD8CD"/>
+  <!-- far arm braced on the knee -->
+  <path d="M368,684 L392,748 L428,800" fill="none" stroke="#0F2450" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- near arm, spraying -->
+  <path d="M406,690 L470,700 L522,690" fill="none" stroke="#1E4A96" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="524" cy="690" r="13" fill="#E0DACB"/>
+  <!-- aerosol can -->
+  <rect x="512" y="646" width="34" height="70" rx="3" fill="#F0243C"/>
+  <rect x="512" y="668" width="34" height="16" fill="#E6E3DA"/>
+  <rect x="512" y="646" width="34" height="8" rx="3" fill="#C4192E"/>
+  <rect x="518" y="628" width="22" height="20" fill="#C9CDD2"/>
+  <rect x="546" y="632" width="16" height="9" rx="3" fill="#9AA0A6"/>
+</g>
+
+<!-- cans + newspaper on the floor -->
+<g>
+  <polygon points="470,948 840,948 862,1000 452,1000" fill="#38424C" opacity=".6"/>
+  <rect x="828" y="880" width="30" height="66" rx="3" fill="#F2B807"/><rect x="833" y="866" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="862" y="892" width="30" height="54" rx="3" fill="#0F9E56"/><rect x="867" y="878" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="176" y="878" width="30" height="66" rx="3" fill="#F0243C"/><rect x="181" y="864" width="20" height="15" fill="#C9CDD2"/>
+  <rect x="212" y="894" width="30" height="50" rx="3" fill="#1E4A96"/><rect x="217" y="880" width="20" height="15" fill="#C9CDD2"/>
+</g>
+<g fill="#F2B807" opacity=".3">
+  <circle cx="600" cy="962" r="4"/><circle cx="638" cy="978" r="2.8"/><circle cx="566" cy="984" r="3.2"/><circle cx="690" cy="966" r="2.4"/>
+</g>
+
+<g style="mix-blend-mode:multiply" opacity=".18"><rect width="900" height="1200" filter="url(#rp-grain)"/></g>
+
+<!-- ============ TITLE BAND ============ -->
+<rect x="0" y="1064" width="900" height="136" fill="#F2B807"/>
+<g font-family="NSN, 'Nimbus Sans Narrow', 'Liberation Sans Narrow', 'Arial Narrow', Helvetica, sans-serif">
+  <text x="52" y="1104" fill="#7A5C02" font-size="15" letter-spacing="4.6" font-weight="700">CAT SEMPROT 300CC · MOTOR &amp; VELG</text>
+  <text x="49" y="1160" fill="#F0243C" font-size="60" font-weight="800" letter-spacing="1" opacity=".85">RPM</text>
+  <text x="52" y="1158" fill="#14181D" font-size="60" font-weight="800" letter-spacing="1">RPM</text>
+</g>
+<g>
+  <rect x="700" y="1120" width="30" height="30" fill="#F0243C"/>
+  <rect x="736" y="1120" width="30" height="30" fill="#0F9E56"/>
+  <rect x="772" y="1120" width="30" height="30" fill="#1E4A96"/>
+  <rect x="808" y="1120" width="30" height="30" fill="#14181D"/>
+</g>
+</svg>

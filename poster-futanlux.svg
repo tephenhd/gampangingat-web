@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Ilustrasi bengkel cat: tukang cat menyemprot tangki motor dengan Futanlux">
+<defs>
+  <pattern id="ft-dsm" width="10" height="10" patternUnits="userSpaceOnUse">
+    <circle cx="5" cy="5" r="1.5" fill="#B0182A"/>
+  </pattern>
+  <pattern id="ft-dlg" width="10" height="10" patternUnits="userSpaceOnUse">
+    <circle cx="5" cy="5" r="3.1" fill="#B0182A"/>
+  </pattern>
+  <pattern id="ft-dwall" width="14" height="14" patternUnits="userSpaceOnUse">
+    <circle cx="7" cy="7" r="1.5" fill="#16356E"/>
+  </pattern>
+  <filter id="ft-grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+</defs>
+
+<!-- paper -->
+<rect width="1200" height="750" fill="#E6E3DA"/>
+
+<!-- wall wash -->
+<rect x="0" y="0" width="1200" height="560" fill="#DAD6CA"/>
+<!-- wall seams -->
+<g fill="#CFCABC">
+  <rect x="196" y="0" width="5" height="560"/>
+  <rect x="560" y="0" width="5" height="560"/>
+  <rect x="924" y="0" width="5" height="560"/>
+</g>
+<!-- halftone wall panel, right -->
+<rect x="929" y="0" width="271" height="560" fill="url(#ft-dwall)" opacity=".22"/>
+
+<!-- constructivist wedges -->
+<g style="mix-blend-mode:multiply">
+  <polygon points="0,0 430,0 0,520" fill="#5B3A8C" opacity=".13"/>
+  <polygon points="1200,0 1200,300 980,0" fill="#B0182A" opacity=".10"/>
+</g>
+
+<!-- booth lights + beams -->
+<g style="mix-blend-mode:multiply">
+  <polygon points="150,86 480,86 620,560 60,560" fill="#D9A521" opacity=".12"/>
+  <polygon points="716,86 1046,86 1150,560 640,560" fill="#D9A521" opacity=".09"/>
+</g>
+<g fill="#EFE3B8">
+  <rect x="140" y="50" width="360" height="26" rx="7"/>
+  <rect x="706" y="50" width="360" height="26" rx="7"/>
+</g>
+<g fill="#3A3F45">
+  <rect x="140" y="40" width="360" height="12" rx="4"/>
+  <rect x="706" y="40" width="360" height="12" rx="4"/>
+  <rect x="300" y="0" width="9" height="40"/>
+  <rect x="866" y="0" width="9" height="40"/>
+</g>
+
+<!-- wall-mounted colour chart -->
+<g>
+  <rect x="502" y="122" width="164" height="168" fill="#B9B3A4"/>
+  <rect x="498" y="118" width="164" height="168" fill="#E6E3DA"/>
+  <g>
+    <rect x="507" y="132" width="26" height="30" fill="#B0182A"/><rect x="537" y="132" width="26" height="30" fill="#D8455C"/><rect x="567" y="132" width="26" height="30" fill="#D9A521"/><rect x="597" y="132" width="26" height="30" fill="#EFCB6A"/><rect x="627" y="132" width="26" height="30" fill="#8C1120"/>
+    <rect x="507" y="166" width="26" height="30" fill="#1F6E5A"/><rect x="537" y="166" width="26" height="30" fill="#3E8F43"/><rect x="567" y="166" width="26" height="30" fill="#16356E"/><rect x="597" y="166" width="26" height="30" fill="#1E4A96"/><rect x="627" y="166" width="26" height="30" fill="#6FA0EC"/>
+    <rect x="507" y="200" width="26" height="30" fill="#5B3A8C"/><rect x="537" y="200" width="26" height="30" fill="#7A4B9E"/><rect x="567" y="200" width="26" height="30" fill="#C23E8E"/><rect x="597" y="200" width="26" height="30" fill="#9AA0A6"/><rect x="627" y="200" width="26" height="30" fill="#14181D"/>
+    <rect x="507" y="234" width="26" height="30" fill="#A8703F"/><rect x="537" y="234" width="26" height="30" fill="#C98A5E"/><rect x="567" y="234" width="26" height="30" fill="#E8A33D"/><rect x="597" y="234" width="26" height="30" fill="#DCD8CD"/><rect x="627" y="234" width="26" height="30" fill="#6B6357"/>
+  </g>
+  <rect x="507" y="272" width="88" height="6" fill="#8E887A"/>
+</g>
+
+<!-- floor -->
+<rect x="0" y="560" width="1200" height="84" fill="#C3BCAC"/>
+<rect x="0" y="560" width="1200" height="6" fill="#A9A08D"/>
+
+<!-- ================= SHELF OF 1L CANS (left) ================= -->
+<g>
+  <rect x="48" y="176" width="13" height="446" fill="#6B6357"/>
+  <rect x="287" y="176" width="13" height="446" fill="#6B6357"/>
+  <g fill="#7A7264">
+    <rect x="48" y="252" width="252" height="13"/>
+    <rect x="48" y="352" width="252" height="13"/>
+    <rect x="48" y="452" width="252" height="13"/>
+    <rect x="48" y="552" width="252" height="13"/>
+  </g>
+  <!-- row 1 -->
+  <g>
+    <rect x="66" y="208" width="31" height="44" fill="#B0182A"/><rect x="63" y="201" width="37" height="8" fill="#8C1120"/>
+    <rect x="105" y="208" width="31" height="44" fill="#5B3A8C"/><rect x="102" y="201" width="37" height="8" fill="#462C6D"/>
+    <rect x="144" y="208" width="31" height="44" fill="#1F6E5A"/><rect x="141" y="201" width="37" height="8" fill="#175344"/>
+    <rect x="183" y="208" width="31" height="44" fill="#D9A521"/><rect x="180" y="201" width="37" height="8" fill="#AC821A"/>
+    <rect x="222" y="208" width="31" height="44" fill="#16356E"/><rect x="219" y="201" width="37" height="8" fill="#0F2450"/>
+    <rect x="261" y="208" width="31" height="44" fill="#9AA0A6"/><rect x="258" y="201" width="37" height="8" fill="#767C82"/>
+  </g>
+  <!-- row 2 -->
+  <g>
+    <rect x="66" y="308" width="31" height="44" fill="#9AA0A6"/><rect x="63" y="301" width="37" height="8" fill="#767C82"/>
+    <rect x="105" y="308" width="31" height="44" fill="#B0182A"/><rect x="102" y="301" width="37" height="8" fill="#8C1120"/>
+    <rect x="144" y="308" width="31" height="44" fill="#14181D"/><rect x="141" y="301" width="37" height="8" fill="#000000"/>
+    <rect x="183" y="308" width="31" height="44" fill="#1F6E5A"/><rect x="180" y="301" width="37" height="8" fill="#175344"/>
+    <rect x="222" y="308" width="31" height="44" fill="#D9A521"/><rect x="219" y="301" width="37" height="8" fill="#AC821A"/>
+    <rect x="261" y="308" width="31" height="44" fill="#5B3A8C"/><rect x="258" y="301" width="37" height="8" fill="#462C6D"/>
+  </g>
+  <!-- row 3 -->
+  <g>
+    <rect x="66" y="408" width="31" height="44" fill="#5B3A8C"/><rect x="63" y="401" width="37" height="8" fill="#462C6D"/>
+    <rect x="105" y="408" width="31" height="44" fill="#D9A521"/><rect x="102" y="401" width="37" height="8" fill="#AC821A"/>
+    <rect x="144" y="408" width="31" height="44" fill="#16356E"/><rect x="141" y="401" width="37" height="8" fill="#0F2450"/>
+    <rect x="183" y="408" width="31" height="44" fill="#B0182A"/><rect x="180" y="401" width="37" height="8" fill="#8C1120"/>
+    <rect x="222" y="408" width="31" height="44" fill="#9AA0A6"/><rect x="219" y="401" width="37" height="8" fill="#767C82"/>
+    <rect x="261" y="408" width="31" height="44" fill="#1F6E5A"/><rect x="258" y="401" width="37" height="8" fill="#175344"/>
+  </g>
+  <!-- row 4 : galon tins -->
+  <g>
+    <rect x="70" y="490" width="62" height="62" fill="#1F6E5A"/><rect x="66" y="482" width="70" height="9" fill="#175344"/>
+    <rect x="150" y="490" width="62" height="62" fill="#B0182A"/><rect x="146" y="482" width="70" height="9" fill="#8C1120"/>
+    <rect x="230" y="490" width="62" height="62" fill="#16356E"/><rect x="226" y="482" width="70" height="9" fill="#0F2450"/>
+  </g>
+</g>
+
+<!-- floor cans beside painter -->
+<g>
+  <rect x="318" y="576" width="34" height="46" fill="#B0182A"/><rect x="315" y="569" width="40" height="8" fill="#8C1120"/>
+  <rect x="358" y="588" width="30" height="34" fill="#D9A521"/><rect x="355" y="581" width="36" height="8" fill="#AC821A"/>
+</g>
+
+<!-- ================= TANK ON STAND ================= -->
+<g>
+  <!-- stand -->
+  <rect x="704" y="452" width="200" height="14" fill="#6B6357"/>
+  <polygon points="716,466 734,466 762,622 740,622" fill="#5C554A"/>
+  <polygon points="892,466 874,466 846,622 868,622" fill="#5C554A"/>
+  <polygon points="748,552 860,562 860,575 748,565" fill="#6B6357"/>
+  <!-- tank body -->
+  <path d="M700,404 C706,376 732,362 766,360 L840,360 C880,362 902,378 904,404 C906,430 890,448 856,452 L746,452 C712,446 694,430 700,404 Z" fill="#B0182A"/>
+  <!-- candy highlight -->
+  <path d="M712,392 C720,374 742,368 770,367 L836,367 C866,369 884,378 890,392 C862,384 740,384 712,392 Z" fill="#D8455C" opacity=".85"/>
+  <!-- lower shade -->
+  <path d="M706,420 C726,438 760,448 800,449 C844,450 882,442 900,424 C898,442 878,452 856,452 L746,452 C724,448 710,436 706,420 Z" fill="#8C1120" opacity=".8"/>
+  <path d="M712,424 C752,436 852,436 894,422" fill="none" stroke="#8C1120" stroke-width="3" opacity=".55"/>
+  <ellipse cx="800" cy="452" rx="86" ry="7" fill="#5C554A" opacity=".35"/>
+  <!-- filler cap -->
+  <ellipse cx="800" cy="364" rx="21" ry="7" fill="#9AA0A6"/>
+  <ellipse cx="800" cy="362" rx="14" ry="4.5" fill="#C9CDD2"/>
+</g>
+
+<!-- ================= MIST ================= -->
+<g style="mix-blend-mode:multiply">
+  <polygon points="656,422 714,336 714,492" fill="url(#ft-dsm)" opacity=".85"/>
+  <polygon points="660,422 710,368 710,466" fill="url(#ft-dlg)" opacity=".7"/>
+</g>
+<g fill="#D8455C" opacity=".5">
+  <circle cx="726" cy="392" r="3"/><circle cx="742" cy="410" r="2.6"/><circle cx="722" cy="428" r="2.8"/>
+  <circle cx="750" cy="382" r="2.2"/><circle cx="736" cy="436" r="2.2"/>
+</g>
+<g fill="#B0182A" opacity=".45">
+  <circle cx="716" cy="336" r="3.2"/><circle cx="742" cy="322" r="2.4"/><circle cx="690" cy="322" r="2"/>
+  <circle cx="730" cy="486" r="2.8"/><circle cx="762" cy="500" r="2.2"/><circle cx="688" cy="492" r="2.4"/>
+  <circle cx="668" cy="352" r="1.8"/><circle cx="676" cy="470" r="2"/>
+</g>
+
+<!-- ================= PAINTER (standing) ================= -->
+<g>
+  <!-- hose -->
+  <path d="M604,458 C566,502 502,542 424,568 C368,588 330,600 306,616" fill="none" stroke="#2C3138" stroke-width="9" stroke-linecap="round"/>
+  <!-- far leg -->
+  <path d="M452,454 L466,544 L476,610" fill="none" stroke="#0F2450" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- far arm -->
+  <path d="M410,348 L374,414 L388,466" fill="none" stroke="#0F2450" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- near leg -->
+  <path d="M436,452 L420,542 L410,610" fill="none" stroke="#16356E" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- boots -->
+  <path d="M395,600 L425,600 L428,622 L390,622 Z" fill="#14181D"/>
+  <path d="M461,600 L491,600 L494,622 L456,622 Z" fill="#14181D"/>
+  <!-- torso -->
+  <polygon points="398,328 486,328 496,462 390,462" fill="#16356E"/>
+  <!-- coverall front panel + placket -->
+  <polygon points="424,330 470,330 476,462 418,462" fill="#1E4A96" opacity=".55"/>
+  <rect x="444" y="336" width="5" height="124" fill="#0F2450" opacity=".7"/>
+  <!-- belt -->
+  <rect x="392" y="432" width="102" height="13" fill="#0F2450"/>
+  <!-- pocket -->
+  <rect x="404" y="378" width="26" height="22" fill="#0F2450" opacity=".6"/>
+  <!-- shoulders -->
+  <rect x="392" y="322" width="102" height="14" rx="7" fill="#1E4A96"/>
+  <!-- neck -->
+  <rect x="440" y="306" width="24" height="22" fill="#A8703F"/>
+  <!-- head -->
+  <circle cx="452" cy="294" r="31" fill="#C98A5E"/>
+  <!-- ear -->
+  <circle cx="436" cy="298" r="6" fill="#A8703F"/>
+  <!-- cap -->
+  <path d="M421,282 C424,262 442,254 460,256 C476,258 486,270 486,284 L421,284 Z" fill="#B0182A"/>
+  <path d="M484,278 L512,281 L512,290 L484,290 Z" fill="#8C1120"/>
+  <!-- goggles -->
+  <rect x="424" y="277" width="62" height="20" rx="8" fill="#8E887A"/>
+  <rect x="440" y="280" width="42" height="14" rx="6" fill="#C9CDD2"/>
+  <rect x="446" y="282" width="14" height="10" rx="4" fill="#E8EAEC" opacity=".85"/>
+  <!-- respirator -->
+  <path d="M448,299 C468,297 483,303 483,311 C483,320 468,326 448,323 Z" fill="#DCD8CD"/>
+  <path d="M424,301 L448,299 L448,323 L424,318 Z" fill="#B9B3A4"/>
+  <circle cx="479" cy="313" r="8.5" fill="#9AA0A6"/>
+  <circle cx="479" cy="313" r="3.6" fill="#6E685C"/>
+  <!-- near arm -->
+  <path d="M478,348 L548,396 L598,428" fill="none" stroke="#1E4A96" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- spray gun -->
+  <polygon points="600,376 636,376 630,406 606,406" fill="#C9CDD2"/>
+  <rect x="597" y="368" width="42" height="9" rx="3" fill="#8E887A"/>
+  <polygon points="586,404 644,408 646,430 586,434" fill="#3A3F45"/>
+  <polygon points="646,412 664,416 664,427 646,431" fill="#9AA0A6"/>
+  <circle cx="664" cy="421" r="4.5" fill="#6E685C"/>
+  <polygon points="592,434 614,434 608,468 590,468" fill="#3A3F45"/>
+  <polygon points="614,430 626,435 617,446 610,441" fill="#9AA0A6"/>
+  <circle cx="601" cy="437" r="14" fill="#E0DACB"/>
+</g>
+
+<!-- ============ FIGURE 2 : MATCHING COLOUR WITH KARTU WARNA ============ -->
+<g>
+  <path d="M1066,454 L1056,544 L1048,610" fill="none" stroke="#0F2450" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1134,352 L1148,414 L1140,458" fill="none" stroke="#0F2450" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1104,452 L1096,542 L1092,610" fill="none" stroke="#16356E" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1028,600 L1058,600 L1060,622 L1022,622 Z" fill="#14181D"/>
+  <path d="M1074,600 L1104,600 L1106,622 L1068,622 Z" fill="#14181D"/>
+  <polygon points="1054,332 1138,332 1146,462 1046,462" fill="#16356E"/>
+  <polygon points="1070,334 1118,334 1124,462 1064,462" fill="#1E4A96" opacity=".5"/>
+  <rect x="1048" y="432" width="96" height="13" fill="#0F2450"/>
+  <rect x="1114" y="376" width="24" height="21" fill="#0F2450" opacity=".6"/>
+  <rect x="1050" y="326" width="96" height="14" rx="7" fill="#1E4A96"/>
+  <rect x="1080" y="308" width="24" height="22" fill="#A8703F"/>
+  <circle cx="1088" cy="296" r="30" fill="#C98A5E"/>
+  <circle cx="1106" cy="300" r="6" fill="#A8703F"/>
+  <path d="M1058,284 C1060,264 1078,256 1096,258 C1112,260 1119,272 1119,286 L1058,286 Z" fill="#1F6E5A"/>
+  <path d="M1060,280 L1032,283 L1032,292 L1060,292 Z" fill="#175344"/>
+  <path d="M1084,294 C1068,292 1057,298 1057,307 C1057,317 1068,322 1084,320 Z" fill="#DCD8CD"/>
+  <!-- near arm, raised, holding the fan deck up to the panel -->
+  <path d="M1062,352 L1022,380 L982,394" fill="none" stroke="#1E4A96" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(980,394)">
+    <rect x="-64" y="-5.5" width="64" height="11" rx="2" transform="rotate(-26)" fill="#B0182A"/>
+    <rect x="-64" y="-5.5" width="64" height="11" rx="2" transform="rotate(-13)" fill="#D9A521"/>
+    <rect x="-64" y="-5.5" width="64" height="11" rx="2" transform="rotate(0)" fill="#1F6E5A"/>
+    <rect x="-64" y="-5.5" width="64" height="11" rx="2" transform="rotate(13)" fill="#5B3A8C"/>
+    <rect x="-64" y="-5.5" width="64" height="11" rx="2" transform="rotate(26)" fill="#16356E"/>
+    <circle cx="0" cy="0" r="5" fill="#14181D"/>
+  </g>
+  <circle cx="980" cy="394" r="13" fill="#E0DACB"/>
+  <rect x="1126" y="458" width="32" height="44" fill="#B0182A"/>
+  <rect x="1123" y="451" width="38" height="8" fill="#8C1120"/>
+  <path d="M1126,456 C1134,442 1150,442 1158,456" fill="none" stroke="#6B6357" stroke-width="4"/>
+</g>
+<!-- masking tape + tin on the floor -->
+<g>
+  <ellipse cx="944" cy="606" rx="22" ry="9" fill="#AC821A"/>
+  <ellipse cx="944" cy="601" rx="22" ry="9" fill="#EFCB6A"/>
+  <ellipse cx="944" cy="601" rx="8" ry="3.5" fill="#C3BCAC"/>
+  <rect x="972" y="578" width="34" height="44" fill="#1F6E5A"/>
+  <rect x="969" y="571" width="40" height="8" fill="#175344"/>
+</g>
+
+<!-- overspray specks on floor -->
+<g fill="#B0182A" opacity=".3">
+  <circle cx="812" cy="600" r="3"/><circle cx="856" cy="614" r="2.2"/><circle cx="770" cy="618" r="2.6"/>
+  <circle cx="900" cy="596" r="2"/><circle cx="736" cy="606" r="1.8"/>
+</g>
+
+<!-- grain -->
+<g style="mix-blend-mode:multiply" opacity=".2"><rect width="1200" height="750" filter="url(#ft-grain)"/></g>
+
+<!-- ================= TITLE BAND ================= -->
+<rect x="0" y="644" width="1200" height="106" fill="#14181D"/>
+<g font-family="NSN, 'Nimbus Sans Narrow', 'Liberation Sans Narrow', 'Arial Narrow', Helvetica, sans-serif">
+  <text x="56" y="678" fill="#D9A521" font-size="15" letter-spacing="4.6" font-weight="700">RUANG SEMPROT · BENGKEL CAT</text>
+  <text x="53" y="731" fill="#B0182A" font-size="58" font-weight="800" letter-spacing="1" opacity=".9">FUTANLUX</text>
+  <text x="56" y="729" fill="#E6E3DA" font-size="58" font-weight="800" letter-spacing="1">FUTANLUX</text>
+  <text x="1144" y="678" fill="#8E887A" font-size="14" letter-spacing="3.4" text-anchor="end">U.D. GAMPANG INGAT · SURABAYA</text>
+</g>
+<g>
+  <rect x="960" y="694" width="30" height="30" fill="#B0182A"/>
+  <rect x="996" y="694" width="30" height="30" fill="#5B3A8C"/>
+  <rect x="1032" y="694" width="30" height="30" fill="#1F6E5A"/>
+  <rect x="1068" y="694" width="30" height="30" fill="#D9A521"/>
+  <rect x="1104" y="694" width="30" height="30" fill="#9AA0A6"/>
+</g>
+</svg>
