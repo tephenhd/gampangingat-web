@@ -1,3 +1,14 @@
+# Applies to every asset. The page is a single self-contained document plus a few
+# static files, so the policy can be tight: the only third party it talks to is
+# Cloudflare Web Analytics. 'unsafe-inline' is unavoidable — the CSS and the whole
+# application script live inline in the HTML, which is what keeps it to one request.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com; form-action 'none'; frame-ancestors 'none'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests
+
 # artifact.html is an internal preview fragment, not a public page.
 # It shares the homepage <title> and has no canonical, so left alone it reads
 # as duplicate content. The noindex meta inside the file is the primary guard;
@@ -8,7 +19,16 @@
 /artifact.html
   X-Robots-Tag: noindex
 
-# The colour data and fonts are inlined, so the page is one big immutable blob.
+# The two display-font weights. Content-addressed by name and never edited in
+# place — a new cut would ship under a new filename — so cache them for a year.
+# They used to be base64 inside the HTML, where they were 34 KB of every single
+# page load and could never be cached separately.
+/nsn-400.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+/nsn-700.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
 /og.png
   Cache-Control: public, max-age=604800
 

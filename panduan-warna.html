@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Panduan Mencocokkan Warna Cat — U.D. Gampang Ingat</title>
 <meta name="description" content="Cara mencocokkan warna cat kendaraan dan besi: di mana mencari kode warna, cara memotret warna yang benar, kenapa kode yang sama bisa terlihat berbeda, dan kenapa metalik harus dites panel dulu.">
-<meta name="theme-color" content="#16356E">
+<meta name="theme-color" content="#EFF1EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1216" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="/nsn-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="canonical" href="https://gampang-ingat.com/panduan-warna">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="U.D. Gampang Ingat">
@@ -21,13 +23,19 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2316356E'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23B8862E'/%3E%3C/svg%3E">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Panduan Mencocokkan Warna Cat", "description": "Cara mencocokkan warna cat kendaraan dan besi: di mana mencari kode warna, cara memotret warna yang benar, kenapa kode yang sama bisa terlihat berbeda, dan kenapa metalik harus dites panel dulu.", "inLanguage": "id", "mainEntityOfPage": "https://gampang-ingat.com/panduan-warna", "image": "https://gampang-ingat.com/og.png", "publisher": {"@id": "https://gampang-ingat.com#business"}, "about": {"@id": "https://gampang-ingat.com#business"}}</script>
 <style>
+/* Same two cuts the homepage uses, now that they are files rather than base64
+   inlined into it — so the guide inherits the house typography for free, off a
+   cache the visitor almost certainly already filled on the way here. Without
+   this, headings here fell back to Arial and the page read as a different site. */
+@font-face{font-family:"NSN";src:url(/nsn-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"NSN";src:url(/nsn-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
 :root{
   --admiral:#16356E; --gold:#B8862E;
   --paper:#EFF1EE; --card:#FFFFFF; --line:#D2D7D2;
   --tx:#151A1F; --tx-2:#4F5A5E; --tx-3:#5E6B6F;
   --brand:var(--admiral); --brand-tx:#FFFFFF;
   --measure:66ch; --wrap:820px;
-  --f-disp:"Nimbus Sans Narrow","Arial Narrow",Helvetica,Arial,sans-serif;
+  --f-disp:"NSN","Nimbus Sans Narrow","Arial Narrow",Helvetica,Arial,sans-serif;
   --f-body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --f-mono:ui-monospace,SFMono-Regular,Menlo,"DejaVu Sans Mono",monospace;
 }
@@ -52,9 +60,9 @@ a{color:var(--brand)}
 .nav{border-bottom:1px solid var(--line);background:var(--card)}
 .nav-in{display:flex;align-items:center;gap:14px;padding:13px 0;justify-content:space-between}
 .logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:inherit;min-width:0}
-.logo-mk{width:22px;height:22px;border-radius:4px;background:var(--admiral);flex:0 0 auto;
-  position:relative}
-.logo-mk::after{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--gold)}
+/* the homepage's mark, not a second one — same colour wheel, same read */
+.logo-mk{width:24px;height:24px;border-radius:3px;flex:0 0 auto;
+  background:conic-gradient(from 210deg,#16356E,#0F9E56,#EFF52A,#C4261D,#B8862E,#16356E)}
 .logo-tx{font-family:var(--f-disp);font-weight:700;font-size:16px;letter-spacing:.01em;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lang-sw{display:flex;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;
