@@ -19,6 +19,9 @@
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="id_ID">
 <meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2316356E'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23B8862E'/%3E%3C/svg%3E">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Panduan Mencocokkan Warna Cat", "description": "Cara mencocokkan warna cat kendaraan dan besi: di mana mencari kode warna, cara memotret warna yang benar, kenapa kode yang sama bisa terlihat berbeda, dan kenapa metalik harus dites panel dulu.", "inLanguage": "id", "mainEntityOfPage": "https://gampang-ingat.com/panduan-warna", "image": "https://gampang-ingat.com/og.png", "publisher": {"@id": "https://gampang-ingat.com#business"}, "about": {"@id": "https://gampang-ingat.com#business"}}</script>
@@ -35,7 +38,7 @@
   --tx:#151A1F; --tx-2:#4F5A5E; --tx-3:#5E6B6F;
   --brand:var(--admiral); --brand-tx:#FFFFFF;
   --measure:66ch; --wrap:820px;
-  --f-disp:"NSN","Nimbus Sans Narrow","Arial Narrow",Helvetica,Arial,sans-serif;
+  --f-disp:"NSN","Nimbus Sans Narrow","Arial Narrow",Helvetica,"PingFang SC","Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans CJK SC","Noto Sans SC","Microsoft YaHei","Yu Gothic UI","Malgun Gothic",sans-serif;
   --f-body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --f-mono:ui-monospace,SFMono-Regular,Menlo,"DejaVu Sans Mono",monospace;
 }
@@ -56,6 +59,11 @@ body{margin:0;background:var(--paper);color:var(--tx);font-family:var(--f-body);
 a{color:var(--brand)}
 :focus-visible{outline:2.5px solid var(--gold);outline-offset:3px;border-radius:2px}
 ::selection{background:var(--brand);color:var(--brand-tx)}
+/* CJK falls back to a non-condensed face; give it leading it can breathe in —
+   same fix as the homepage, now that this page ships zh/ja content too */
+html[lang^="zh"] h1,html[lang="ja"] h1,html[lang^="zh"] h2,html[lang="ja"] h2{
+  line-height:1.2;letter-spacing:0}
+html[lang^="zh"] .eyebrow,html[lang="ja"] .eyebrow{letter-spacing:.08em}
 
 .nav{border-bottom:1px solid var(--line);background:var(--card)}
 .nav-in{display:flex;align-items:center;gap:14px;padding:13px 0;justify-content:space-between}
@@ -70,6 +78,9 @@ a{color:var(--brand)}
 .lang-sw button{border:0;background:var(--card);color:var(--tx-2);font-family:var(--f-disp);
   font-weight:700;font-size:12px;letter-spacing:.05em;padding:7px 11px;cursor:pointer}
 .lang-sw button[aria-pressed="true"]{background:var(--brand);color:var(--brand-tx)}
+/* five buttons now, not two — tighten before the logo text starts losing the fight */
+@media(max-width:420px){.lang-sw button{padding:7px 8px;font-size:11px}
+  .logo-tx{font-size:14px}}
 
 header.hd{padding:40px 0 26px;border-bottom:1px solid var(--line)}
 .eyebrow{font-family:var(--f-disp);font-weight:700;text-transform:uppercase;letter-spacing:.13em;
@@ -132,15 +143,18 @@ footer a{color:inherit}
     <div class="lang-sw">
       <button type="button" data-lang="id" aria-pressed="true">ID</button>
       <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="zh" aria-pressed="false" lang="zh-Hans">简</button>
+      <button type="button" data-lang="tw" aria-pressed="false" lang="zh-Hant">繁</button>
+      <button type="button" data-lang="ja" aria-pressed="false" lang="ja">日</button>
     </div>
   </div>
 </nav>
 
 <header class="hd">
   <div class="wrap">
-    <p class="eyebrow" data-id="Panduan" data-en="Guide">Panduan</p>
-    <h1 data-id="Cara mencocokkan warna cat" data-en="How to match a paint colour">Cara mencocokkan warna cat</h1>
-    <p class="lede" data-id="Kesalahan mencocokkan warna itu mahal — catnya kepakai, waktunya habis, dan bidangnya harus diulang. Ini urutan yang kami pakai sehari-hari waktu melayani bengkel dan tukang." data-en="Getting a colour wrong is expensive — the paint is used, the time is gone, and the panel has to be redone. This is the order we work through every day with workshops and applicators.">Kesalahan mencocokkan warna itu mahal — catnya kepakai, waktunya habis, dan bidangnya harus diulang. Ini urutan yang kami pakai sehari-hari waktu melayani bengkel dan tukang.</p>
+    <p class="eyebrow" data-id="Panduan" data-en="Guide" data-zh="指南" data-tw="指南" data-ja="ガイド">Panduan</p>
+    <h1 data-id="Cara mencocokkan warna cat" data-en="How to match a paint colour" data-zh="如何配色" data-tw="如何配色" data-ja="塗料の色合わせの方法">Cara mencocokkan warna cat</h1>
+    <p class="lede" data-id="Kesalahan mencocokkan warna itu mahal — catnya kepakai, waktunya habis, dan bidangnya harus diulang. Ini urutan yang kami pakai sehari-hari waktu melayani bengkel dan tukang." data-en="Getting a colour wrong is expensive — the paint is used, the time is gone, and the panel has to be redone. This is the order we work through every day with workshops and applicators." data-zh="配错颜色代价不小——漆料用掉了、时间花掉了，板面还得重做。这是我们每天为维修厂和技师服务时所用的步骤。" data-tw="配錯顏色代價不小——漆料用掉了、時間花掉了，板面還得重做。這是我們每天為維修廠和技師服務時所用的步驟。" data-ja="色合わせを誤ると高くつきます——塗料は使ってしまい、時間も失われ、パネルはやり直しになります。これは私たちが整備工場や職人の方々に日々ご案内している手順です。">Kesalahan mencocokkan warna itu mahal — catnya kepakai, waktunya habis, dan bidangnya harus diulang. Ini urutan yang kami pakai sehari-hari waktu melayani bengkel dan tukang.</p>
   </div>
 </header>
 
@@ -148,93 +162,99 @@ footer a{color:inherit}
 
   <section class="step">
     <span class="step-n">01</span>
-    <h2 data-id="Cari kodenya dulu, jangan tebak warnanya" data-en="Find the code first — never guess the colour">Cari kodenya dulu, jangan tebak warnanya</h2>
-    <p data-id="Kode warna selalu lebih akurat daripada mata. Sebelum mencocokkan secara visual, cek dulu tiga tempat ini:" data-en="A colour code always beats the eye. Before matching visually, check these three places:">Kode warna selalu lebih akurat daripada mata. Sebelum mencocokkan secara visual, cek dulu tiga tempat ini:</p>
+    <h2 data-id="Cari kodenya dulu, jangan tebak warnanya" data-en="Find the code first — never guess the colour" data-zh="先找色号，不要凭感觉猜色" data-tw="先找色號，不要憑感覺猜色" data-ja="まず色番号を探す——色を目分量で決めない">Cari kodenya dulu, jangan tebak warnanya</h2>
+    <p data-id="Kode warna selalu lebih akurat daripada mata. Sebelum mencocokkan secara visual, cek dulu tiga tempat ini:" data-en="A colour code always beats the eye. Before matching visually, check these three places:" data-zh="色号永远比肉眼判断更准确。在用眼睛比对颜色之前，请先检查这三个地方：" data-tw="色號永遠比肉眼判斷更準確。在用眼睛比對顏色之前，請先檢查這三個地方：" data-ja="色番号は目視より必ず正確です。目で色を合わせる前に、まずこの3か所を確認してください。">Kode warna selalu lebih akurat daripada mata. Sebelum mencocokkan secara visual, cek dulu tiga tempat ini:</p>
     <ul>
-      <li data-id="Kaleng lama — kodenya biasanya tercetak di label, sering di dekat nama warnanya." data-en="The old tin — the code is usually printed on the label, often next to the colour name.">Kaleng lama — kodenya biasanya tercetak di label, sering di dekat nama warnanya.</li>
-      <li data-id="Kendaraan — banyak pabrikan menempel plat kode warna di rangka pintu, di bawah kap, atau di kompartemen bagasi." data-en="The vehicle — most makers put a colour-code plate on the door jamb, under the bonnet, or in the boot.">Kendaraan — banyak pabrikan menempel plat kode warna di rangka pintu, di bawah kap, atau di kompartemen bagasi.</li>
-      <li data-id="Nota lama — kalau pernah beli dari kami, nama dan kode warnanya tercatat di nota." data-en="An old invoice — if you have bought from us before, the colour name and code are on the nota.">Nota lama — kalau pernah beli dari kami, nama dan kode warnanya tercatat di nota.</li>
+      <li data-id="Kaleng lama — kodenya biasanya tercetak di label, sering di dekat nama warnanya." data-en="The old tin — the code is usually printed on the label, often next to the colour name." data-zh="旧漆罐——色号通常印在标签上，常常就在颜色名称旁边。" data-tw="舊漆罐——色號通常印在標籤上，常常就在顏色名稱旁邊。" data-ja="古い缶——色番号はラベルに印刷されていることが多く、色名の近くにあります。">Kaleng lama — kodenya biasanya tercetak di label, sering di dekat nama warnanya.</li>
+      <li data-id="Kendaraan — banyak pabrikan menempel plat kode warna di rangka pintu, di bawah kap, atau di kompartemen bagasi." data-en="The vehicle — most makers put a colour-code plate on the door jamb, under the bonnet, or in the boot." data-zh="车辆本身——许多厂商会把色号铭牌贴在车门框、引擎盖下方或后备箱内。" data-tw="車輛本身——許多廠商會把色號銘牌貼在車門框、引擎蓋下方或後車廂內。" data-ja="車両本体——多くのメーカーはドアの縁、ボンネットの下、トランク内などに色番号プレートを貼っています。">Kendaraan — banyak pabrikan menempel plat kode warna di rangka pintu, di bawah kap, atau di kompartemen bagasi.</li>
+      <li data-id="Nota lama — kalau pernah beli dari kami, nama dan kode warnanya tercatat di nota." data-en="An old invoice — if you have bought from us before, the colour name and code are on the nota." data-zh="旧单据——如果您之前向我们购买过，颜色名称和色号会记录在单据上。" data-tw="舊單據——如果您之前向我們購買過，顏色名稱和色號會記錄在單據上。" data-ja="過去の伝票——以前に当店でご購入いただいた場合、色名と色番号は伝票に記載されています。">Nota lama — kalau pernah beli dari kami, nama dan kode warnanya tercatat di nota.</li>
     </ul>
   </section>
 
   <section class="step">
     <span class="step-n">02</span>
-    <h2 data-id="Kalau kodenya hilang, fotonya harus benar" data-en="If the code is gone, the photo has to be right">Kalau kodenya hilang, fotonya harus benar</h2>
-    <p data-id="Sebagian besar foto yang masuk ke kami sulit dipakai bukan karena kameranya, tapi karena cahayanya. Lampu neon bengkel membuat warna bergeser ke hijau atau biru." data-en="Most photos we receive are hard to use — not because of the camera, but the light. Workshop fluorescent tubes push colours towards green or blue.">Sebagian besar foto yang masuk ke kami sulit dipakai bukan karena kameranya, tapi karena cahayanya. Lampu neon bengkel membuat warna bergeser ke hijau atau biru.</p>
+    <h2 data-id="Kalau kodenya hilang, fotonya harus benar" data-en="If the code is gone, the photo has to be right" data-zh="如果色号不见了，照片就要拍对" data-tw="如果色號不見了，照片就要拍對" data-ja="色番号が分からない場合は、正しく撮影することが重要です">Kalau kodenya hilang, fotonya harus benar</h2>
+    <p data-id="Sebagian besar foto yang masuk ke kami sulit dipakai bukan karena kameranya, tapi karena cahayanya. Lampu neon bengkel membuat warna bergeser ke hijau atau biru." data-en="Most photos we receive are hard to use — not because of the camera, but the light. Workshop fluorescent tubes push colours towards green or blue." data-zh="我们收到的照片大多难以使用，问题往往不在相机，而在光线。车间日光灯会让颜色偏绿或偏蓝。" data-tw="我們收到的照片大多難以使用，問題往往不在相機，而在光線。車間日光燈會讓顏色偏綠或偏藍。" data-ja="お送りいただく写真の多くが使いにくいのは、カメラのせいではなく光の問題です。工場の蛍光灯は色を緑や青寄りに見せてしまいます。">Sebagian besar foto yang masuk ke kami sulit dipakai bukan karena kameranya, tapi karena cahayanya. Lampu neon bengkel membuat warna bergeser ke hijau atau biru.</p>
     <ul>
-      <li data-id="Foto di luar, di bawah cahaya matahari, tapi jangan di bawah matahari terik jam 12." data-en="Shoot outdoors in daylight — but not under harsh midday sun.">Foto di luar, di bawah cahaya matahari, tapi jangan di bawah matahari terik jam 12.</li>
-      <li data-id="Matikan flash. Flash membuat kilap palsu dan menghilangkan warna aslinya." data-en="Turn the flash off. It creates false highlights and washes out the real colour.">Matikan flash. Flash membuat kilap palsu dan menghilangkan warna aslinya.</li>
-      <li data-id="Pilih bagian yang bersih dan rata — bukan yang baret, berdebu, atau sudah dipoles." data-en="Pick a clean, flat area — not a scratched, dusty or freshly polished one.">Pilih bagian yang bersih dan rata — bukan yang baret, berdebu, atau sudah dipoles.</li>
-      <li data-id="Kalau memungkinkan, bawa potongan panel atau tutup bensin ke toko. Barang fisik selalu menang dari foto." data-en="If you can, bring a panel offcut or the fuel cap to the shop. A physical sample always beats a photo.">Kalau memungkinkan, bawa potongan panel atau tutup bensin ke toko. Barang fisik selalu menang dari foto.</li>
+      <li data-id="Foto di luar, di bawah cahaya matahari, tapi jangan di bawah matahari terik jam 12." data-en="Shoot outdoors in daylight — but not under harsh midday sun." data-zh="在户外自然光下拍摄，但避开中午的强烈日照。" data-tw="在戶外自然光下拍攝，但避開中午的強烈日照。" data-ja="屋外の自然光の下で撮影してください。ただし正午の強い直射日光は避けてください。">Foto di luar, di bawah cahaya matahari, tapi jangan di bawah matahari terik jam 12.</li>
+      <li data-id="Matikan flash. Flash membuat kilap palsu dan menghilangkan warna aslinya." data-en="Turn the flash off. It creates false highlights and washes out the real colour." data-zh="关闭闪光灯。闪光灯会造成假的反光并掩盖真实颜色。" data-tw="關閉閃光燈。閃光燈會造成假的反光並掩蓋真實顏色。" data-ja="フラッシュはオフにしてください。フラッシュは不自然な光沢を生み、本来の色を消してしまいます。">Matikan flash. Flash membuat kilap palsu dan menghilangkan warna aslinya.</li>
+      <li data-id="Pilih bagian yang bersih dan rata — bukan yang baret, berdebu, atau sudah dipoles." data-en="Pick a clean, flat area — not a scratched, dusty or freshly polished one." data-zh="选择干净平整的部位拍摄——不要选有刮痕、有灰尘或刚打过蜡的地方。" data-tw="選擇乾淨平整的部位拍攝——不要選有刮痕、有灰塵或剛打過蠟的地方。" data-ja="傷や埃がなく、磨き上げていない、きれいで平らな部分を選んでください。">Pilih bagian yang bersih dan rata — bukan yang baret, berdebu, atau sudah dipoles.</li>
+      <li data-id="Kalau memungkinkan, bawa potongan panel atau tutup bensin ke toko. Barang fisik selalu menang dari foto." data-en="If you can, bring a panel offcut or the fuel cap to the shop. A physical sample always beats a photo." data-zh="如果可以，请带板件样品或油箱盖到店里。实物永远比照片准确。" data-tw="如果可以，請帶板件樣品或油箱蓋到店裡。實物永遠比照片準確。" data-ja="可能であれば、パネルの端材やフューエルキャップを店舗までお持ちください。実物は写真に勝ります。">Kalau memungkinkan, bawa potongan panel atau tutup bensin ke toko. Barang fisik selalu menang dari foto.</li>
     </ul>
   </section>
 
   <section class="step">
     <span class="step-n">03</span>
-    <h2 data-id="Kenapa kode yang sama bisa terlihat berbeda" data-en="Why the same code can look different">Kenapa kode yang sama bisa terlihat berbeda</h2>
-    <p data-id="Ini yang paling sering jadi salah paham. Kode yang sama, cat yang sama, tapi hasilnya kelihatan lain. Biasanya salah satu dari empat ini penyebabnya:" data-en="This is the most common misunderstanding. Same code, same paint, different result. Usually one of four things:">Ini yang paling sering jadi salah paham. Kode yang sama, cat yang sama, tapi hasilnya kelihatan lain. Biasanya salah satu dari empat ini penyebabnya:</p>
+    <h2 data-id="Kenapa kode yang sama bisa terlihat berbeda" data-en="Why the same code can look different" data-zh="为什么同一个色号看起来会不一样" data-tw="為什麼同一個色號看起來會不一樣" data-ja="同じ色番号でも見え方が違う理由">Kenapa kode yang sama bisa terlihat berbeda</h2>
+    <p data-id="Ini yang paling sering jadi salah paham. Kode yang sama, cat yang sama, tapi hasilnya kelihatan lain. Biasanya salah satu dari empat ini penyebabnya:" data-en="This is the most common misunderstanding. Same code, same paint, different result. Usually one of four things:" data-zh="这是最常见的误解。同样的色号、同样的漆，喷出来的效果却不一样。通常是以下四个原因之一：" data-tw="這是最常見的誤解。同樣的色號、同樣的漆，噴出來的效果卻不一樣。通常是以下四個原因之一：" data-ja="これは最もよくある誤解です。同じ色番号、同じ塗料なのに、仕上がりが違って見える——原因は通常この4つのいずれかです。">Ini yang paling sering jadi salah paham. Kode yang sama, cat yang sama, tapi hasilnya kelihatan lain. Biasanya salah satu dari empat ini penyebabnya:</p>
     <ul>
-      <li data-id="Cahaya. Dua warna bisa kelihatan sama di dalam bengkel lalu jelas berbeda di bawah matahari." data-en="Light. Two colours can look identical indoors, then clearly differ in sunlight.">Cahaya. Dua warna bisa kelihatan sama di dalam bengkel lalu jelas berbeda di bawah matahari.</li>
-      <li data-id="Tingkat kilap. Warna yang sama terlihat lebih pekat dan dalam pada versi gloss, dan lebih pucat serta rata pada versi doff." data-en="Gloss level. The same colour looks deeper and richer in gloss, and paler and flatter in matt.">Tingkat kilap. Warna yang sama terlihat lebih pekat dan dalam pada versi gloss, dan lebih pucat serta rata pada versi doff.</li>
-      <li data-id="Warna dasar di bawahnya. Primer abu-abu, putih, dan merah memberi hasil akhir yang berbeda, terutama untuk warna terang dan tembus." data-en="The undercoat. Grey, white and red primers give different final results, especially under light or translucent colours.">Warna dasar di bawahnya. Primer abu-abu, putih, dan merah memberi hasil akhir yang berbeda, terutama untuk warna terang dan tembus.</li>
-      <li data-id="Umur cat lama. Bidang yang sudah bertahun-tahun kena matahari pasti sudah pudar — cocokkan ke kondisi sekarang, bukan ke warna aslinya dulu." data-en="Age. A panel that has spent years in the sun has faded — match to how it looks now, not to how it left the factory.">Umur cat lama. Bidang yang sudah bertahun-tahun kena matahari pasti sudah pudar — cocokkan ke kondisi sekarang, bukan ke warna aslinya dulu.</li>
+      <li data-id="Cahaya. Dua warna bisa kelihatan sama di dalam bengkel lalu jelas berbeda di bawah matahari." data-en="Light. Two colours can look identical indoors, then clearly differ in sunlight." data-zh="光线。两种颜色在室内可能看起来相同，到了阳光下却明显不同。" data-tw="光線。兩種顏色在室內可能看起來相同，到了陽光下卻明顯不同。" data-ja="光。屋内では同じに見えても、太陽光の下では明らかに違って見えることがあります。">Cahaya. Dua warna bisa kelihatan sama di dalam bengkel lalu jelas berbeda di bawah matahari.</li>
+      <li data-id="Tingkat kilap. Warna yang sama terlihat lebih pekat dan dalam pada versi gloss, dan lebih pucat serta rata pada versi doff." data-en="Gloss level. The same colour looks deeper and richer in gloss, and paler and flatter in matt." data-zh="光泽度。同一颜色在亮光版本中显得更浓郁深邃，在哑光版本中则显得较浅且平淡。" data-tw="光澤度。同一顏色在亮光版本中顯得更濃郁深邃，在霧光版本中則顯得較淺且平淡。" data-ja="光沢の度合い。同じ色でも、グロス仕上げでは濃く深く見え、マット仕上げでは淡く平坦に見えます。">Tingkat kilap. Warna yang sama terlihat lebih pekat dan dalam pada versi gloss, dan lebih pucat serta rata pada versi doff.</li>
+      <li data-id="Warna dasar di bawahnya. Primer abu-abu, putih, dan merah memberi hasil akhir yang berbeda, terutama untuk warna terang dan tembus." data-en="The undercoat. Grey, white and red primers give different final results, especially under light or translucent colours." data-zh="底层的颜色。灰色、白色和红色底漆会带来不同的最终效果，浅色和透明色尤其明显。" data-tw="底層的顏色。灰色、白色和紅色底漆會帶來不同的最終效果，淺色和透明色尤其明顯。" data-ja="下地の色。グレー、ホワイト、レッドのプライマーはそれぞれ異なる仕上がりになります。特に明るい色や透過性のある色で顕著です。">Warna dasar di bawahnya. Primer abu-abu, putih, dan merah memberi hasil akhir yang berbeda, terutama untuk warna terang dan tembus.</li>
+      <li data-id="Umur cat lama. Bidang yang sudah bertahun-tahun kena matahari pasti sudah pudar — cocokkan ke kondisi sekarang, bukan ke warna aslinya dulu." data-en="Age. A panel that has spent years in the sun has faded — match to how it looks now, not to how it left the factory." data-zh="旧漆的年份。多年日晒的板面必定已经褪色——请以现状为准配色，而不是原厂当初的颜色。" data-tw="舊漆的年份。多年日曬的板面必定已經褪色——請以現狀為準配色，而不是原廠當初的顏色。" data-ja="既存塗装の経年。長年日光にさらされたパネルは必ず色あせています——工場出荷時の色ではなく、現在の状態に合わせてください。">Umur cat lama. Bidang yang sudah bertahun-tahun kena matahari pasti sudah pudar — cocokkan ke kondisi sekarang, bukan ke warna aslinya dulu.</li>
     </ul>
     <div class="callout">
-      <p data-id="Warna di layar HP dan komputer tidak pernah persis sama dengan cat aslinya. Kalibrasi layar, tingkat kecerahan, dan cahaya ruangan semuanya mengubah apa yang Anda lihat. Untuk keputusan akhir, pakai kartu warna cetak." data-en="Colours on a phone or computer screen are never exactly the paint. Screen calibration, brightness and room lighting all change what you see. For the final decision, use a printed colour card."><strong data-id="Layar bukan patokan." data-en="A screen is not a reference.">Layar bukan patokan.</strong> Warna di layar HP dan komputer tidak pernah persis sama dengan cat aslinya. Kalibrasi layar, tingkat kecerahan, dan cahaya ruangan semuanya mengubah apa yang Anda lihat. Untuk keputusan akhir, pakai kartu warna cetak.</p>
+      <!-- split into sibling elements, neither nested inside a data-id parent: the same
+           lang-switch mechanism used here (el.textContent = ...) replaces ALL of an
+           element's children, so a <strong data-id> nested inside a <p data-id> was
+           silently dropped on every render, including the initial Indonesian one — the
+           bold lead-in never actually displayed. Same fix already used on the homepage's
+           own colour-accuracy disclaimer. -->
+      <p><strong data-id="Layar bukan patokan." data-en="A screen is not a reference." data-zh="屏幕不能作为标准。" data-tw="螢幕不能作為標準。" data-ja="画面は基準になりません。">Layar bukan patokan.</strong> <span data-id="Warna di layar HP dan komputer tidak pernah persis sama dengan cat aslinya. Kalibrasi layar, tingkat kecerahan, dan cahaya ruangan semuanya mengubah apa yang Anda lihat. Untuk keputusan akhir, pakai kartu warna cetak." data-en="Colours on a phone or computer screen are never exactly the paint. Screen calibration, brightness and room lighting all change what you see. For the final decision, use a printed colour card." data-zh="手机和电脑屏幕上的颜色，永远无法与实际油漆完全一致。屏幕校准、亮度和室内光线都会改变您所看到的颜色。做最终决定时，请使用印刷色卡。" data-tw="手機和電腦螢幕上的顏色，永遠無法與實際油漆完全一致。螢幕校準、亮度和室內光線都會改變您所看到的顏色。做最終決定時，請使用印刷色卡。" data-ja="スマートフォンやパソコンの画面上の色は、実際の塗料の色と完全に一致することはありません。画面のキャリブレーション、明るさ、室内の照明はすべて見え方を変えます。最終判断には、印刷された色見本をご使用ください。">Warna di layar HP dan komputer tidak pernah persis sama dengan cat aslinya. Kalibrasi layar, tingkat kecerahan, dan cahaya ruangan semuanya mengubah apa yang Anda lihat. Untuk keputusan akhir, pakai kartu warna cetak.</span></p>
     </div>
   </section>
 
   <section class="step">
     <span class="step-n">04</span>
-    <h2 data-id="Metalik, pearl, dan candytone tidak bisa dicocokkan dari foto" data-en="Metallic, pearl and candytone cannot be matched from a photo">Metalik, pearl, dan candytone tidak bisa dicocokkan dari foto</h2>
-    <p data-id="Warna solid hanya punya satu tampilan. Metalik dan pearl punya butiran yang memantulkan cahaya, jadi warnanya berubah tergantung sudut pandang. Candytone lebih rumit lagi karena lapisannya tembus pandang — hasil akhirnya tergantung berapa lapis yang disemprot dan warna dasarnya." data-en="A solid colour has one appearance. Metallic and pearl contain flake that reflects light, so the colour shifts with viewing angle. Candytone is harder still: the coat is translucent, so the result depends on how many passes are sprayed and on the base underneath.">Warna solid hanya punya satu tampilan. Metalik dan pearl punya butiran yang memantulkan cahaya, jadi warnanya berubah tergantung sudut pandang. Candytone lebih rumit lagi karena lapisannya tembus pandang — hasil akhirnya tergantung berapa lapis yang disemprot dan warna dasarnya.</p>
-    <p data-id="Artinya, dua orang bisa memakai kaleng yang persis sama dan mendapat hasil yang berbeda, hanya karena cara menyemprotnya berbeda. Untuk warna jenis ini, tes panel bukan pilihan — wajib." data-en="Which means two people can use the exact same tin and get different results purely from how they spray. For these colours a test panel is not optional.">Artinya, dua orang bisa memakai kaleng yang persis sama dan mendapat hasil yang berbeda, hanya karena cara menyemprotnya berbeda. Untuk warna jenis ini, tes panel bukan pilihan — wajib.</p>
+    <h2 data-id="Metalik, pearl, dan candytone tidak bisa dicocokkan dari foto" data-en="Metallic, pearl and candytone cannot be matched from a photo" data-zh="金属漆、珠光漆和糖果漆无法仅凭照片配色" data-tw="金屬漆、珠光漆和糖果漆無法僅憑照片配色" data-ja="メタリック、パール、キャンディは写真だけでは色合わせできません">Metalik, pearl, dan candytone tidak bisa dicocokkan dari foto</h2>
+    <p data-id="Warna solid hanya punya satu tampilan. Metalik dan pearl punya butiran yang memantulkan cahaya, jadi warnanya berubah tergantung sudut pandang. Candytone lebih rumit lagi karena lapisannya tembus pandang — hasil akhirnya tergantung berapa lapis yang disemprot dan warna dasarnya." data-en="A solid colour has one appearance. Metallic and pearl contain flake that reflects light, so the colour shifts with viewing angle. Candytone is harder still: the coat is translucent, so the result depends on how many passes are sprayed and on the base underneath." data-zh="实色漆只有一种外观。金属漆和珠光漆含有反光的颗粒，因此颜色会随观察角度而改变。糖果漆更复杂，因为它的涂层是透明的——最终效果取决于喷涂的层数和底色。" data-tw="實色漆只有一種外觀。金屬漆和珠光漆含有反光的顆粒，因此顏色會隨觀察角度而改變。糖果漆更複雜，因為它的塗層是透明的——最終效果取決於噴塗的層數和底色。" data-ja="ソリッドカラーは見え方が一通りです。メタリックとパールは光を反射するフレークを含むため、見る角度によって色が変わります。キャンディはさらに複雑で、塗膜が透過性であるため、吹き付ける回数と下地の色によって仕上がりが変わります。">Warna solid hanya punya satu tampilan. Metalik dan pearl punya butiran yang memantulkan cahaya, jadi warnanya berubah tergantung sudut pandang. Candytone lebih rumit lagi karena lapisannya tembus pandang — hasil akhirnya tergantung berapa lapis yang disemprot dan warna dasarnya.</p>
+    <p data-id="Artinya, dua orang bisa memakai kaleng yang persis sama dan mendapat hasil yang berbeda, hanya karena cara menyemprotnya berbeda. Untuk warna jenis ini, tes panel bukan pilihan — wajib." data-en="Which means two people can use the exact same tin and get different results purely from how they spray. For these colours a test panel is not optional." data-zh="这意味着，两个人使用完全相同的一罐漆，也可能因为喷涂方式不同而得到不同的结果。对这类颜色来说，测试板不是可选项，而是必须的。" data-tw="這意味著，兩個人使用完全相同的一罐漆，也可能因為噴塗方式不同而得到不同的結果。對這類顏色來說，測試板不是可選項，而是必須的。" data-ja="つまり、まったく同じ缶を使っても、吹き付け方によって二人の仕上がりが変わることがあります。この種の色では、テストパネルは任意ではなく必須です。">Artinya, dua orang bisa memakai kaleng yang persis sama dan mendapat hasil yang berbeda, hanya karena cara menyemprotnya berbeda. Untuk warna jenis ini, tes panel bukan pilihan — wajib.</p>
   </section>
 
   <section class="step">
     <span class="step-n">05</span>
-    <h2 data-id="Selalu semprot panel tes dulu" data-en="Always spray a test panel first">Selalu semprot panel tes dulu</h2>
-    <p data-id="Langkah ini yang paling sering dilewati, dan paling sering bikin rugi. Sebelum menyemprot seluruh bidang:" data-en="This is the most skipped step and the most expensive one to skip. Before you spray the whole panel:">Langkah ini yang paling sering dilewati, dan paling sering bikin rugi. Sebelum menyemprot seluruh bidang:</p>
+    <h2 data-id="Selalu semprot panel tes dulu" data-en="Always spray a test panel first" data-zh="一定要先喷测试板" data-tw="一定要先噴測試板" data-ja="必ず先にテストパネルを吹く">Selalu semprot panel tes dulu</h2>
+    <p data-id="Langkah ini yang paling sering dilewati, dan paling sering bikin rugi. Sebelum menyemprot seluruh bidang:" data-en="This is the most skipped step and the most expensive one to skip. Before you spray the whole panel:" data-zh="这是最常被省略的步骤，也是最容易造成损失的一步。在喷涂整个板面之前：" data-tw="這是最常被省略的步驟，也是最容易造成損失的一步。在噴塗整個板面之前：" data-ja="この工程は最も省略されがちですが、最も損失につながりやすい工程です。全面を吹き付ける前に：">Langkah ini yang paling sering dilewati, dan paling sering bikin rugi. Sebelum menyemprot seluruh bidang:</p>
     <ul>
-      <li data-id="Semprot panel kecil dengan sistem yang lengkap — dempul, primer, warna, sampai clear-nya. Bukan cuma warnanya saja." data-en="Spray a small panel with the complete system — filler, primer, colour and clear. Not just the colour.">Semprot panel kecil dengan sistem yang lengkap — dempul, primer, warna, sampai clear-nya. Bukan cuma warnanya saja.</li>
-      <li data-id="Tunggu benar-benar kering. Warna basah dan warna kering tidak sama." data-en="Let it dry fully. Wet colour and dry colour are not the same.">Tunggu benar-benar kering. Warna basah dan warna kering tidak sama.</li>
-      <li data-id="Bandingkan di luar, di bawah matahari, dan dari beberapa sudut — bukan di dalam bengkel." data-en="Compare outdoors in daylight, from several angles — not inside the workshop.">Bandingkan di luar, di bawah matahari, dan dari beberapa sudut — bukan di dalam bengkel.</li>
+      <li data-id="Semprot panel kecil dengan sistem yang lengkap — dempul, primer, warna, sampai clear-nya. Bukan cuma warnanya saja." data-en="Spray a small panel with the complete system — filler, primer, colour and clear. Not just the colour." data-zh="在小块板面上喷涂完整的涂装系统——腻子、底漆、面漆到清漆，而不只是颜色本身。" data-tw="在小塊板面上噴塗完整的塗裝系統——膩子、底漆、面漆到清漆，而不只是顏色本身。" data-ja="小さなパネルにパテ、プライマー、カラー、クリアまで一連の工程を施してください。色だけではいけません。">Semprot panel kecil dengan sistem yang lengkap — dempul, primer, warna, sampai clear-nya. Bukan cuma warnanya saja.</li>
+      <li data-id="Tunggu benar-benar kering. Warna basah dan warna kering tidak sama." data-en="Let it dry fully. Wet colour and dry colour are not the same." data-zh="等待完全干透。湿漆和干漆的颜色并不相同。" data-tw="等待完全乾透。濕漆和乾漆的顏色並不相同。" data-ja="完全に乾くまで待ってください。濡れた状態と乾いた状態では色が異なります。">Tunggu benar-benar kering. Warna basah dan warna kering tidak sama.</li>
+      <li data-id="Bandingkan di luar, di bawah matahari, dan dari beberapa sudut — bukan di dalam bengkel." data-en="Compare outdoors in daylight, from several angles — not inside the workshop." data-zh="在户外阳光下、从多个角度比对——不要在车间里比对。" data-tw="在戶外陽光下、從多個角度比對——不要在車間裡比對。" data-ja="屋外の太陽光の下で、複数の角度から比較してください——工場内では比較しないでください。">Bandingkan di luar, di bawah matahari, dan dari beberapa sudut — bukan di dalam bengkel.</li>
     </ul>
   </section>
 
   <section class="step">
     <span class="step-n">06</span>
-    <h2 data-id="Yang perlu Anda sebutkan waktu bertanya" data-en="What to tell us when you ask">Yang perlu Anda sebutkan waktu bertanya</h2>
-    <p data-id="Kalau empat hal ini disebutkan sekaligus, kami bisa langsung jawab tanpa bolak-balik bertanya." data-en="Give us these four things at once and we can answer straight away, without going back and forth.">Kalau empat hal ini disebutkan sekaligus, kami bisa langsung jawab tanpa bolak-balik bertanya.</p>
+    <h2 data-id="Yang perlu Anda sebutkan waktu bertanya" data-en="What to tell us when you ask" data-zh="询问时请告诉我们这些信息" data-tw="詢問時請告訴我們這些資訊" data-ja="お問い合わせの際にお伝えいただきたいこと">Yang perlu Anda sebutkan waktu bertanya</h2>
+    <p data-id="Kalau empat hal ini disebutkan sekaligus, kami bisa langsung jawab tanpa bolak-balik bertanya." data-en="Give us these four things at once and we can answer straight away, without going back and forth." data-zh="如果一次性告诉我们这四项信息，我们就能立即答复，不必来回确认。" data-tw="如果一次性告訴我們這四項資訊，我們就能立即答覆，不必來回確認。" data-ja="この4点を一度にお知らせいただければ、やり取りを重ねることなくすぐにお答えできます。">Kalau empat hal ini disebutkan sekaligus, kami bisa langsung jawab tanpa bolak-balik bertanya.</p>
     <div class="checklist">
       <div>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-        <div><b data-id="Kode atau nama warnanya" data-en="The colour code or name">Kode atau nama warnanya</b><span data-id="Atau fotonya, kalau kodenya tidak ada." data-en="Or a photo, if the code is gone.">Atau fotonya, kalau kodenya tidak ada.</span></div>
+        <div><b data-id="Kode atau nama warnanya" data-en="The colour code or name" data-zh="色号或颜色名称" data-tw="色號或顏色名稱" data-ja="色番号または色名">Kode atau nama warnanya</b><span data-id="Atau fotonya, kalau kodenya tidak ada." data-en="Or a photo, if the code is gone." data-zh="若没有色号，也可以提供照片。" data-tw="若沒有色號，也可以提供照片。" data-ja="色番号が分からない場合は写真でも構いません。">Atau fotonya, kalau kodenya tidak ada.</span></div>
       </div>
       <div>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-        <div><b data-id="Permukaannya apa" data-en="The substrate">Permukaannya apa</b><span data-id="Bodi kendaraan, besi, kayu, mesin, atau lantai." data-en="Vehicle body, steel, timber, machinery or flooring.">Bodi kendaraan, besi, kayu, mesin, atau lantai.</span></div>
+        <div><b data-id="Permukaannya apa" data-en="The substrate" data-zh="施工底材" data-tw="施工底材" data-ja="施工する下地">Permukaannya apa</b><span data-id="Bodi kendaraan, besi, kayu, mesin, atau lantai." data-en="Vehicle body, steel, timber, machinery or flooring." data-zh="车身、铁件、木材、机械或地面。" data-tw="車身、鐵件、木材、機械或地面。" data-ja="車体、鉄部、木部、機械、床など。">Bodi kendaraan, besi, kayu, mesin, atau lantai.</span></div>
       </div>
       <div>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-        <div><b data-id="Kilap yang diinginkan" data-en="The finish you want">Kilap yang diinginkan</b><span data-id="Doff, semigloss, atau gloss." data-en="Matt, semigloss or gloss.">Doff, semigloss, atau gloss.</span></div>
+        <div><b data-id="Kilap yang diinginkan" data-en="The finish you want" data-zh="希望的光泽度" data-tw="希望的光澤度" data-ja="ご希望の仕上がり">Kilap yang diinginkan</b><span data-id="Doff, semigloss, atau gloss." data-en="Matt, semigloss or gloss." data-zh="哑光、半光或亮光。" data-tw="霧光、半光或亮光。" data-ja="マット、半光沢、グロスのいずれか。">Doff, semigloss, atau gloss.</span></div>
       </div>
       <div>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-        <div><b data-id="Perkiraan kebutuhannya" data-en="Roughly how much you need">Perkiraan kebutuhannya</b><span data-id="Supaya kami sarankan ukuran kemasan yang paling masuk akal." data-en="So we can suggest the pack size that makes sense.">Supaya kami sarankan ukuran kemasan yang paling masuk akal.</span></div>
+        <div><b data-id="Perkiraan kebutuhannya" data-en="Roughly how much you need" data-zh="大约需要的用量" data-tw="大約需要的用量" data-ja="必要なおおよその量">Perkiraan kebutuhannya</b><span data-id="Supaya kami sarankan ukuran kemasan yang paling masuk akal." data-en="So we can suggest the pack size that makes sense." data-zh="以便我们建议最合适的包装规格。" data-tw="以便我們建議最合適的包裝規格。" data-ja="適切な荷姿をご提案するためです。">Supaya kami sarankan ukuran kemasan yang paling masuk akal.</span></div>
       </div>
     </div>
   </section>
 
   <div class="cta">
-    <h2 data-id="Ada warna yang mau dicocokkan?" data-en="Got a colour to match?">Ada warna yang mau dicocokkan?</h2>
-    <p data-id="Kirim kode atau fotonya lewat WhatsApp. Kalau tidak ada di kartu warna kami, sering kali masih bisa kami carikan." data-en="Send the code or a photo on WhatsApp. If it is not on our colour card, we can often still source it.">Kirim kode atau fotonya lewat WhatsApp. Kalau tidak ada di kartu warna kami, sering kali masih bisa kami carikan.</p>
+    <h2 data-id="Ada warna yang mau dicocokkan?" data-en="Got a colour to match?" data-zh="有颜色需要配色吗？" data-tw="有顏色需要配色嗎？" data-ja="色合わせしたい塗料はありますか？">Ada warna yang mau dicocokkan?</h2>
+    <p data-id="Kirim kode atau fotonya lewat WhatsApp. Kalau tidak ada di kartu warna kami, sering kali masih bisa kami carikan." data-en="Send the code or a photo on WhatsApp. If it is not on our colour card, we can often still source it." data-zh="通过 WhatsApp 发送色号或照片。即使不在我们的色卡上，我们通常仍能为您找到。" data-tw="透過 WhatsApp 傳送色號或照片。即使不在我們的色卡上，我們通常仍能為您找到。" data-ja="色番号または写真を WhatsApp でお送りください。当店の色見本になくても、多くの場合お取り寄せ可能です。">Kirim kode atau fotonya lewat WhatsApp. Kalau tidak ada di kartu warna kami, sering kali masih bisa kami carikan.</p>
     <div class="btns">
       <a class="btn btn-wa" id="wa" href="#" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.42 1.31-1.96 1.35-.5.04-.99.22-3.35-.7-2.82-1.11-4.6-3.99-4.74-4.18-.14-.19-1.13-1.5-1.13-2.86 0-1.36.71-2.03.96-2.31.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.63.48.24.55.8 1.91.87 2.05.07.14.12.3.02.49-.1.19-.15.3-.29.47-.14.16-.3.36-.43.49-.14.14-.29.29-.13.57.17.28.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.29 1.41.28.14.45.12.61-.07.17-.19.71-.83.9-1.11.19-.28.37-.23.63-.14.25.09 1.61.76 1.89.9.28.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
-        <span data-id="Tanya lewat WhatsApp" data-en="Ask on WhatsApp">Tanya lewat WhatsApp</span>
+        <span data-id="Tanya lewat WhatsApp" data-en="Ask on WhatsApp" data-zh="通过 WhatsApp 询问" data-tw="透過 WhatsApp 詢問" data-ja="WhatsApp で問い合わせる">Tanya lewat WhatsApp</span>
       </a>
-      <a class="btn btn-line" href="/#warna" data-id="Lihat kartu warna" data-en="See the colour card">Lihat kartu warna</a>
+      <a class="btn btn-line" href="/#warna" data-id="Lihat kartu warna" data-en="See the colour card" data-zh="查看色卡" data-tw="查看色卡" data-ja="カラーチャートを見る">Lihat kartu warna</a>
     </div>
   </div>
 
@@ -242,8 +262,8 @@ footer a{color:inherit}
 
 <footer>
   <div class="wrap">
-    <p data-id="U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · Panduan ini bersifat umum; hasil akhir tetap tergantung bahan, alat, dan cara pengerjaan di lapangan." data-en="U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · This guide is general; the final result still depends on materials, equipment and how the work is carried out.">U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · Panduan ini bersifat umum; hasil akhir tetap tergantung bahan, alat, dan cara pengerjaan di lapangan.</p>
-    <p><a href="/" data-id="← Kembali ke halaman utama" data-en="← Back to the main page">← Kembali ke halaman utama</a></p>
+    <p data-id="U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · Panduan ini bersifat umum; hasil akhir tetap tergantung bahan, alat, dan cara pengerjaan di lapangan." data-en="U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · This guide is general; the final result still depends on materials, equipment and how the work is carried out." data-zh="U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · 本指南仅供一般参考；最终效果仍取决于所用材料、工具及现场施工方式。" data-tw="U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · 本指南僅供一般參考；最終效果仍取決於所用材料、工具及現場施工方式。" data-ja="U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · 本ガイドは一般的な内容です。最終的な仕上がりは、使用する材料・道具・現場での施工方法によって変わります。">U.D. Gampang Ingat · Jl. Baliwerti 14, Surabaya 60175 · Panduan ini bersifat umum; hasil akhir tetap tergantung bahan, alat, dan cara pengerjaan di lapangan.</p>
+    <p><a href="/" data-id="← Kembali ke halaman utama" data-en="← Back to the main page" data-zh="← 返回首页" data-tw="← 返回首頁" data-ja="← トップページへ戻る">← Kembali ke halaman utama</a></p>
   </div>
 </footer>
 
@@ -251,14 +271,18 @@ footer a{color:inherit}
 (function(){
   "use strict";
   var WA = "6281339953131";
+  var LANGTAG = {id:"id", en:"en", zh:"zh-Hans", tw:"zh-Hant", ja:"ja"};
   var MSG = {
     id: "Halo U.D. Gampang Ingat, saya mau mencocokkan warna cat. Ini detailnya:\n\nKode/nama warna: ______\nPermukaan: ______\nKilap: ______\nPerkiraan kebutuhan: ______",
-    en: "Hello U.D. Gampang Ingat, I would like to match a paint colour. Details:\n\nColour code/name: ______\nSubstrate: ______\nFinish: ______\nApproximate quantity: ______"
+    en: "Hello U.D. Gampang Ingat, I would like to match a paint colour. Details:\n\nColour code/name: ______\nSubstrate: ______\nFinish: ______\nApproximate quantity: ______",
+    zh: "您好，U.D. Gampang Ingat，我想配色。详细信息如下：\n\n色号／颜色名称：______\n施工底材：______\n光泽度：______\n大约用量：______",
+    tw: "您好，U.D. Gampang Ingat，我想配色。詳細資訊如下：\n\n色號／顏色名稱：______\n施工底材：______\n光澤度：______\n大約用量：______",
+    ja: "U.D. Gampang Ingat 御中\n色合わせをお願いしたく、ご連絡いたします。詳細は以下の通りです。\n\n色番号／色名：______\n下地：______\n仕上げ：______\nおおよその必要量：______"
   };
   var lang = "id";
-  function apply(l){
+  function apply(l, fromUser){
     lang = l;
-    document.documentElement.setAttribute("lang", l);
+    document.documentElement.setAttribute("lang", LANGTAG[l] || l);
     var els = document.querySelectorAll("[data-id]"), i;
     for(i = 0; i < els.length; i++){
       var v = els[i].getAttribute("data-" + l);
@@ -270,18 +294,31 @@ footer a{color:inherit}
     document.getElementById("wa").setAttribute("href",
       "https://wa.me/" + WA + "?text=" + encodeURIComponent(MSG[l] || MSG.id));
     try{ localStorage.setItem("gi-lang", l); }catch(e){}
+    /* mirrors the homepage: only rewrite ?lang= off the back of an actual click, never
+       on boot, so arriving at a plain link never silently mutates the address bar */
+    if(fromUser) try{
+      var url = new URL(location.href);
+      if(l==="id") url.searchParams.delete("lang"); else url.searchParams.set("lang", l);
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }catch(e){}
   }
   document.addEventListener("click", function(e){
     var b = e.target.closest ? e.target.closest(".lang-sw button") : null;
-    if(b) apply(b.getAttribute("data-lang"));
+    if(b) apply(b.getAttribute("data-lang"), 1);
   });
-  var saved = "id";
-  try{
-    saved = localStorage.getItem("gi-lang");
-    if(saved !== "id" && saved !== "en")
-      saved = (navigator.language || "id").toLowerCase().indexOf("en") === 0 ? "en" : "id";
-  }catch(e){ saved = "id"; }
-  apply(saved || "id");
+  var VALID = {id:1, en:1, zh:1, tw:1, ja:1};
+  function pickLang(){
+    var m = /[?&]lang=([a-zA-Z-]+)/.exec(String(location.search||""));
+    if(m && VALID[m[1].toLowerCase()]) return m[1].toLowerCase();
+    try{ var s = localStorage.getItem("gi-lang"); if(VALID[s]) return s; }catch(e){}
+    var nl = "";
+    try{ nl = String(navigator.language||"").toLowerCase(); }catch(e){}
+    if(nl.indexOf("zh")===0) return /hant|-tw|-hk|-mo/.test(nl) ? "tw" : "zh";
+    if(nl.indexOf("ja")===0) return "ja";
+    if(nl.indexOf("en")===0) return "en";
+    return "id";
+  }
+  apply(pickLang());
 })();
 </script>
 
