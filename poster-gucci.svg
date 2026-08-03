@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img" aria-label="Ilustrasi meja campur: pekerja bermasker respirator menuang thinner dari kaleng 1 liter ke gelas takar di bawah penyedot udara, dengan saringan cat dan spray gun menunggu di meja">
+<defs>
+  <pattern id="gc-dsm" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="5.5" cy="5.5" r="1.4" fill="#0E7C86"/></pattern>
+  <pattern id="gc-dlg" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="5.5" cy="5.5" r="2.6" fill="#0E7C86"/></pattern>
+  <filter id="gc-grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+</defs>
+
+<rect width="900" height="1200" fill="#E6E3DA"/>
+<rect x="0" y="0" width="900" height="896" fill="#DDD9CD"/>
+<g style="mix-blend-mode:multiply">
+  <polygon points="900,0 900,300 690,0" fill="#0E7C86" opacity=".12"/>
+  <polygon points="0,0 210,0 0,280" fill="#D9A521" opacity=".12"/>
+</g>
+
+<!-- ============ EXTRACTOR HOOD OVER THE BENCH ============ -->
+<g>
+  <rect x="642" y="0" width="86" height="128" fill="#B9B3A4"/>
+  <rect x="642" y="0" width="26" height="128" fill="#C9CDD2"/>
+  <g stroke="#8E887A" stroke-width="4">
+    <line x1="642" y1="40" x2="728" y2="40"/><line x1="642" y1="84" x2="728" y2="84"/>
+  </g>
+  <polygon points="560,270 820,270 728,128 642,128" fill="#B9B3A4"/>
+  <polygon points="560,270 820,270 806,292 574,292" fill="#8E887A"/>
+  <polygon points="642,128 728,128 820,270 762,270" fill="#C9CDD2" opacity=".55"/>
+  <g stroke="#8E887A" stroke-width="5">
+    <line x1="596" y1="278" x2="784" y2="278"/>
+  </g>
+</g>
+
+<!-- extraction draught: the series halftone, doing structural work -->
+<g style="mix-blend-mode:multiply">
+  <polygon points="452,700 900,700 806,292 574,292" fill="url(#gc-dsm)" opacity=".26"/>
+  <polygon points="516,700 848,700 780,320 606,320" fill="url(#gc-dlg)" opacity=".16"/>
+</g>
+<g fill="#0E7C86" opacity=".3">
+  <circle cx="620" cy="392" r="3"/><circle cx="712" cy="356" r="2.4"/><circle cx="548" cy="470" r="2.6"/>
+  <circle cx="806" cy="520" r="2.8"/><circle cx="672" cy="452" r="2"/>
+</g>
+
+<!-- ============ WALL SHELF: THE THREE GRADES ============ -->
+<g>
+  <rect x="34" y="340" width="304" height="14" fill="#8A8378"/>
+  <polygon points="60,354 78,354 60,384" fill="#6B6357"/>
+  <polygon points="312,354 294,354 312,384" fill="#6B6357"/>
+  <g>
+    <rect x="58" y="248" width="64" height="92" fill="#C9CDD2"/>
+    <rect x="58" y="276" width="64" height="32" fill="#0E7C86"/>
+    <rect x="58" y="248" width="64" height="8" fill="#9AA0A6"/>
+    <rect x="76" y="234" width="26" height="15" fill="#8A8378"/>
+  </g>
+  <g>
+    <rect x="140" y="248" width="64" height="92" fill="#C9CDD2"/>
+    <rect x="140" y="276" width="64" height="32" fill="#16356E"/>
+    <rect x="140" y="248" width="64" height="8" fill="#9AA0A6"/>
+    <rect x="158" y="234" width="26" height="15" fill="#8A8378"/>
+  </g>
+  <g>
+    <rect x="222" y="248" width="64" height="92" fill="#C9CDD2"/>
+    <rect x="222" y="276" width="64" height="32" fill="#D9A521"/>
+    <rect x="222" y="248" width="64" height="8" fill="#9AA0A6"/>
+    <rect x="240" y="234" width="26" height="15" fill="#8A8378"/>
+  </g>
+  <g font-family="NSN, 'Liberation Sans Narrow', 'Arial Narrow', Helvetica, sans-serif"
+     font-size="21" font-weight="800" fill="#E6E3DA" text-anchor="middle">
+    <text x="90" y="300">A</text>
+    <text x="172" y="300">SP</text>
+    <text x="254" y="300">B</text>
+  </g>
+</g>
+
+<!-- floor -->
+<rect x="0" y="896" width="900" height="168" fill="#C3BCAC"/>
+<rect x="0" y="896" width="900" height="6" fill="#A9A08D"/>
+
+<!-- ============ BENCH ============ -->
+<g>
+  <rect x="360" y="700" width="540" height="24" fill="#8A8378"/>
+  <rect x="360" y="700" width="540" height="8" fill="#A59E92"/>
+  <rect x="424" y="724" width="22" height="172" fill="#6B6357"/>
+  <rect x="856" y="724" width="22" height="172" fill="#6B6357"/>
+  <rect x="430" y="812" width="432" height="13" fill="#6B6357"/>
+  <polygon points="410,674 878,674 900,700 388,700" fill="#EFEDE4"/>
+  <g stroke="#C7C3B5" stroke-width="3">
+    <line x1="430" y1="684" x2="640" y2="684"/><line x1="430" y1="692" x2="596" y2="692"/>
+  </g>
+</g>
+
+<!-- ============ THE PAINTER ============ -->
+<g>
+  <!-- far leg -->
+  <path d="M296,772 L308,834 L314,884" fill="none" stroke="#0F2450" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M290,876 L332,876 L334,902 L286,902 Z" fill="#14181D"/>
+  <!-- near leg -->
+  <path d="M244,770 L232,834 L224,884" fill="none" stroke="#16356E" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M198,876 L240,876 L242,902 L194,902 Z" fill="#14181D"/>
+  <!-- neck, behind the head -->
+  <rect x="236" y="496" width="42" height="52" fill="#A8703F"/>
+  <!-- torso -->
+  <polygon points="196,542 316,542 330,782 184,782" fill="#16356E"/>
+  <polygon points="218,544 292,544 300,782 210,782" fill="#1E4A96" opacity=".5"/>
+  <rect x="188" y="744" width="138" height="15" fill="#0F2450"/>
+  <!-- apron -->
+  <path d="M216,572 L298,572 L310,782 L206,782 Z" fill="#0E7C86" opacity=".45"/>
+  <rect x="192" y="536" width="130" height="16" rx="8" fill="#1E4A96"/>
+  <!-- head, facing right -->
+  <circle cx="255" cy="470" r="40" fill="#C98A5E"/>
+  <!-- bandana, knotted at the back -->
+  <path d="M216,452 C216,424 236,408 258,410 C282,412 293,430 294,452 C270,442 238,440 216,458 Z" fill="#14181D"/>
+  <path d="M220,446 L196,452 L202,468 L224,458 Z" fill="#0F2450"/>
+  <!-- goggles: strap round the head, lens on the face only -->
+  <rect x="216" y="454" width="76" height="15" fill="#14181D"/>
+  <!-- tinted lens: dark, so it never merges with the pale respirator below -->
+  <rect x="258" y="450" width="35" height="23" rx="10" fill="#3E4A55"/>
+  <rect x="258" y="450" width="35" height="23" rx="10" fill="none" stroke="#8A8378" stroke-width="3"/>
+  <path d="M266,456 L280,456 L272,468 L262,468 Z" fill="#C9CDD2" opacity=".55"/>
+  <!-- respirator: the Tiloc mask profile scaled to this head (r40 vs r30). It
+       starts at the face centre so the cheek stays visible — a wider shape
+       reads as a banner across the face, not a mask. -->
+  <rect x="216" y="484" width="42" height="10" rx="3" fill="#9AA0A6"/>
+  <path d="M254,476 C276,473 292,481 292,492 C292,503 274,509 256,504 C250,496 250,483 254,476 Z" fill="#DCD8CD"/>
+  <circle cx="278" cy="492" r="7" fill="#B9B3A4"/>
+  <circle cx="278" cy="492" r="3" fill="#8A8378"/>
+  <!-- far arm, steadying the cup -->
+  <path d="M310,586 L392,626 L472,656" fill="none" stroke="#0F2450" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="486" cy="660" r="15" fill="#C98A5E"/>
+  <!-- near arm, holding the tin -->
+  <path d="M322,570 L390,542 L448,550" fill="none" stroke="#1E4A96" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="458" cy="552" r="16" fill="#C98A5E"/>
+</g>
+
+<!-- ============ THE 1 LITRE TIN, TIPPED TO POUR ============ -->
+<!-- upright body x470..545 y470..565, rotated 40deg about (507.5,517.5) -> lip at (567,505) -->
+<g transform="rotate(40 507.5 517.5)">
+  <rect x="470" y="470" width="75" height="95" fill="#C9CDD2"/>
+  <rect x="470" y="499" width="75" height="32" fill="#0E7C86"/>
+  <rect x="470" y="470" width="75" height="9" fill="#9AA0A6"/>
+  <rect x="463" y="465" width="89" height="10" rx="4" fill="#8A8378"/>
+  <path d="M476,484 C492,462 524,462 539,484" fill="none" stroke="#6B6357" stroke-width="5"/>
+  <!-- the open mouth, so the stream visibly issues from the tin -->
+  <ellipse cx="507" cy="470" rx="37" ry="8" fill="#5A6167"/>
+  <ellipse cx="507" cy="471" rx="29" ry="5" fill="#0E7C86"/>
+</g>
+<!-- fingers wrapping the front of the tin -->
+<g fill="#B87C50">
+  <rect x="452" y="540" width="26" height="11" rx="5.5"/>
+  <rect x="456" y="556" width="26" height="11" rx="5.5"/>
+</g>
+
+<!-- ============ THE POUR ============ -->
+<g>
+  <path d="M566,506 C566,540 556,572 550,616" fill="none" stroke="#7FCBD1" stroke-width="11" stroke-linecap="round"/>
+  <path d="M566,506 C566,540 556,572 550,616" fill="none" stroke="#B7E2E5" stroke-width="4" stroke-linecap="round"/>
+</g>
+
+<!-- ============ THE MIXING CUP ============ -->
+<g>
+  <ellipse cx="542" cy="706" rx="52" ry="8" fill="#A9A08D" opacity=".35"/>
+  <polygon points="498,620 588,620 576,700 510,700" fill="#E4E7E9"/>
+  <polygon points="498,620 534,620 530,700 510,700" fill="#F3F5F6"/>
+  <!-- reduced paint sitting in the cup -->
+  <polygon points="507,658 579,658 574,697 512,697" fill="#0E7C86"/>
+  <ellipse cx="543" cy="658" rx="36" ry="8" fill="#26A5AF"/>
+  <g stroke="#9AA0A6" stroke-width="3">
+    <line x1="558" y1="632" x2="584" y2="632"/><line x1="560" y1="644" x2="582" y2="644"/>
+  </g>
+  <ellipse cx="543" cy="620" rx="45" ry="11" fill="none" stroke="#B9B3A4" stroke-width="5"/>
+</g>
+<g fill="#26A5AF" opacity=".5">
+  <circle cx="592" cy="596" r="3.4"/><circle cx="504" cy="586" r="2.6"/>
+</g>
+
+<!-- ============ STRAINER CONE IN A SECOND CUP ============ -->
+<g>
+  <polygon points="644,644 730,644 718,700 656,700" fill="#DDE1E3"/>
+  <polygon points="644,644 676,644 668,700 656,700" fill="#F3F5F6"/>
+  <polygon points="632,638 742,638 687,694" fill="#EFEDE4"/>
+  <polygon points="632,638 742,638 687,652" fill="#D8DCDE"/>
+  <g stroke="#C7C3B5" stroke-width="2.5">
+    <line x1="648" y1="650" x2="726" y2="650"/><line x1="660" y1="662" x2="714" y2="662"/>
+  </g>
+</g>
+
+<!-- ============ SPRAY GUN, STANDING, WAITING TO BE FILLED ============ -->
+<g>
+  <!-- gravity cup on top -->
+  <polygon points="790,548 844,548 836,602 798,602" fill="#DDE1E3"/>
+  <polygon points="790,548 810,548 806,602 798,602" fill="#F3F5F6"/>
+  <rect x="786" y="540" width="62" height="10" rx="4" fill="#8A8378"/>
+  <!-- body, nozzle pointing back into the room -->
+  <rect x="762" y="602" width="92" height="32" rx="9" fill="#4E4A42"/>
+  <rect x="762" y="602" width="92" height="10" rx="5" fill="#8A8378"/>
+  <polygon points="762,608 740,614 740,628 762,634" fill="#8A8378"/>
+  <circle cx="738" cy="621" r="9" fill="#9AA0A6"/>
+  <circle cx="738" cy="621" r="4" fill="#4E4A42"/>
+  <!-- fluid and fan knobs at the back -->
+  <circle cx="856" cy="612" r="7" fill="#9AA0A6"/>
+  <circle cx="856" cy="628" r="5" fill="#9AA0A6"/>
+  <!-- trigger and handle down to the bench -->
+  <path d="M778,636 L796,636 L790,656 L774,653 Z" fill="#8A8378"/>
+  <path d="M790,634 L836,634 L820,700 L784,700 Z" fill="#4E4A42"/>
+  <path d="M790,634 L804,634 L792,700 L784,700 Z" fill="#7D7568"/>
+</g>
+
+<!-- ============ THE GALON ON THE FLOOR ============ -->
+<g>
+  <rect x="74" y="762" width="132" height="140" fill="#C9CDD2"/>
+  <rect x="74" y="802" width="132" height="48" fill="#0E7C86"/>
+  <rect x="74" y="762" width="132" height="10" fill="#9AA0A6"/>
+  <rect x="112" y="744" width="38" height="20" fill="#8A8378"/>
+  <path d="M94,752 C110,722 170,722 186,752" fill="none" stroke="#6B6357" stroke-width="7"/>
+  <rect x="74" y="762" width="34" height="140" fill="#E6E3DA" opacity=".18"/>
+</g>
+<g fill="#0E7C86" opacity=".28">
+  <circle cx="362" cy="946" r="5"/><circle cx="410" cy="968" r="3.4"/><circle cx="330" cy="976" r="3"/>
+</g>
+
+<g style="mix-blend-mode:multiply" opacity=".2"><rect width="900" height="1200" filter="url(#gc-grain)"/></g>
+
+<!-- ============ TITLE BAND ============ -->
+<rect x="0" y="1064" width="900" height="136" fill="#14181D"/>
+<g font-family="NSN, 'Nimbus Sans Narrow', 'Liberation Sans Narrow', 'Arial Narrow', Helvetica, sans-serif">
+  <text x="52" y="1104" fill="#3FB8C2" font-size="15" letter-spacing="4.6" font-weight="700">THINNER · PENGENCER CAT DUCO &amp; REFINISH</text>
+  <text x="49" y="1160" fill="#0E7C86" font-size="60" font-weight="800" letter-spacing="1" opacity=".9">GUCCI</text>
+  <text x="52" y="1158" fill="#E6E3DA" font-size="60" font-weight="800" letter-spacing="1">GUCCI</text>
+</g>
+<g>
+  <rect x="700" y="1120" width="30" height="30" fill="#0E7C86"/>
+  <rect x="736" y="1120" width="30" height="30" fill="#16356E"/>
+  <rect x="772" y="1120" width="30" height="30" fill="#D9A521"/>
+  <rect x="808" y="1120" width="30" height="30" fill="#C9CDD2"/>
+</g>
+</svg>
