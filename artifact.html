@@ -7,6 +7,7 @@
 :root{
   --admiral:#16356E; --admiral-2:#1E4A96; --gold:#B8862E; --gold-2:#D6A33F;
   --ink:#0E1216; --ink-2:#161B21;
+  --logo-g:#16356E; --logo-drop:#B8862E;
   --paper:#EFF1EE; --card:#FFFFFF; --line:#D2D7D2;
   --tx:#151A1F; --tx-2:#4F5A5E; --tx-3:#5E6B6F;
   --brand:var(--admiral); --brand-tx:#FFFFFF;
@@ -21,6 +22,7 @@
   :root{
     --paper:#0E1216; --card:#161B21; --line:#28313A;
     --tx:#E6EAE6; --tx-2:#A4B0B4; --tx-3:#7C888D;
+    --logo-g:#E6EAE6; --logo-drop:#D6A33F;
     --brand:#6FA0EC; --brand-tx:#0E1216; --admiral-2:#6FA0EC;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
     --sw-ring:rgba(255,255,255,.16);
@@ -29,6 +31,7 @@
 :root[data-theme="dark"]{
   --paper:#0E1216; --card:#161B21; --line:#28313A;
   --tx:#E6EAE6; --tx-2:#A4B0B4; --tx-3:#7C888D;
+  --logo-g:#E6EAE6; --logo-drop:#D6A33F;
   --brand:#6FA0EC; --brand-tx:#0E1216; --admiral-2:#6FA0EC;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
   --sw-ring:rgba(255,255,255,.16);
@@ -36,6 +39,7 @@
 :root[data-theme="light"]{
   --paper:#EFF1EE; --card:#FFFFFF; --line:#D2D7D2;
   --tx:#151A1F; --tx-2:#4F5A5E; --tx-3:#5E6B6F;
+  --logo-g:#16356E; --logo-drop:#B8862E;
   --brand:#16356E; --brand-tx:#FFFFFF; --admiral-2:#1E4A96;
   --shadow:0 1px 2px rgba(14,18,22,.05),0 8px 24px -12px rgba(14,18,22,.18);
   --sw-ring:rgba(20,26,31,.13);
@@ -80,8 +84,15 @@ html[lang^="zh"] h1,html[lang="ja"] h1{font-size:clamp(38px,7vw,76px)}
   backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;gap:26px;height:62px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--tx);flex:0 0 auto}
-.logo-mk{width:30px;height:30px;border-radius:3px;flex:0 0 auto;
-  background:conic-gradient(from 210deg,#16356E,#0F9E56,#EFF52A,#C4261D,#B8862E,#16356E)}
+/* The mark: a geometric G holding a drop. Inline rather than a background-image so
+   the two inks follow the theme tokens instead of needing a rule per theme block. */
+.logo-mk{width:32px;height:32px;flex:0 0 auto;display:block}
+.logo-mk svg{display:block;width:100%;height:100%}
+/* colours as CSS rules, not fill="var(--x)" presentation attributes — var() in a
+   presentation attribute is not reliably supported and fails silently to black */
+.logo-mk .g{stroke:var(--logo-g)}
+.logo-mk .f{fill:var(--logo-g)}
+.logo-mk .d{fill:var(--logo-drop)}
 .logo-tx{font-family:var(--f-disp);font-weight:700;text-transform:uppercase;
   font-size:17px;letter-spacing:.02em;line-height:1}
 .logo-sub{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--tx-3);
@@ -462,7 +473,7 @@ section[id],header[id]{scroll-margin-top:74px}
 <nav class="nav">
   <div class="wrap nav-in">
     <a class="logo" href="#top">
-      <span class="logo-mk" aria-hidden="true"></span>
+      <span class="logo-mk" aria-hidden="true"><svg viewBox="0 0 100 100"><path class="g" fill="none" stroke-width="14" d="M 71.796 18.872 A 38 38 0 1 0 88 50"/><rect class="f" x="58" y="43" width="37" height="14"/><path class="d" d="M 43.2 23.6 C 54.276 38 57.4 44.796 57.4 53.6 A 14.2 14.2 0 0 1 29 53.6 C 29 44.796 32.124 38 43.2 23.6 Z"/></svg></span>
       <span>
         <span class="logo-tx">U.D. Gampang Ingat</span>
         <span class="logo-sub" data-id="Berdagang macam-macam cat" data-en="Paint merchants, Surabaya">Berdagang macam-macam cat</span>

@@ -35,3 +35,7 @@
 # Illustrated brand posters — content-stable, lazy-loaded, safe to cache hard.
 /poster-*.svg
   Cache-Control: public, max-age=604800
+
+# iOS home-screen icon — the navy chip build of the mark. Content-stable.
+/apple-touch-icon.png
+  Cache-Control: public, max-age=604800
