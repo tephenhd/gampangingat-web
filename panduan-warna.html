@@ -91,7 +91,8 @@ html[lang^="zh"] .eyebrow,html[lang="ja"] .eyebrow{letter-spacing:.08em}
 .lang-sw{display:flex;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;
   flex:0 0 auto}
 .lang-sw button{border:0;background:var(--card);color:var(--tx-2);font-family:var(--f-disp);
-  font-weight:700;font-size:12px;letter-spacing:.05em;padding:7px 11px;cursor:pointer}
+  font-weight:700;font-size:12px;letter-spacing:.05em;padding:7px 11px;cursor:pointer;
+  min-height:38px;min-width:34px}
 .lang-sw button[aria-pressed="true"]{background:var(--brand);color:var(--brand-tx)}
 /* five buttons now, not two — tighten before the logo text starts losing the fight */
 @media(max-width:420px){.lang-sw button{padding:7px 8px;font-size:11px}
@@ -143,7 +144,8 @@ li::marker{color:var(--tx-3)}
 .btn-line{border-color:var(--line);color:var(--tx)}
 
 footer{border-top:1px solid var(--line);padding:22px 0 44px;color:var(--tx-3);font-size:13px}
-footer a{color:inherit}
+/* a thumb-sized target, though the line it sits on is short */
+footer a{color:inherit;display:inline-block;padding-block:10px;margin-block:-10px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}
   ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 </style>
